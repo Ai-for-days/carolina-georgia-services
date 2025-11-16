@@ -1,16 +1,11 @@
-import { Toaster } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
-import ErrorBoundary from "./components/ErrorBoundary";
-import { ThemeProvider } from "./contexts/ThemeContext";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Emergency from "./pages/Emergency";
-import Commercial from "./pages/Commercial";
-import Residential from "./pages/Residential";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import fs from 'fs';
+
+const appPath = './client/src/App.tsx';
+let content = fs.readFileSync(appPath, 'utf8');
+
+// Add imports after Residential import
+const importInsertPoint = 'import Footer from "./components/Footer";';
+const locationImports = `
 import BoydenArbor from "./pages/locations/boyden-arbor";
 import WindsorEstates from "./pages/locations/windsor-estates";
 import FairwoldAcres from "./pages/locations/fairwold-acres";
@@ -48,18 +43,13 @@ import ArcadiaLakes from "./pages/locations/arcadia-lakes";
 import DutchFork from "./pages/locations/dutch-fork";
 import FortJackson from "./pages/locations/fort-jackson";
 import IntownColumbia from "./pages/locations/intown-columbia";
-import LowerRichland from "./pages/locations/lower-richland";
+import LowerRichland from "./pages/locations/lower-richland";`;
 
-function Router() {
-  return (
-    <>
-      <Header />
-      <Switch>
-         <Route path={"/"} component={Home} />
-      <Route path={"/services"} component={Services} />
-      <Route path={"/emergency"} component={Emergency} />
-      <Route path={"/commercial"} component={Commercial} />
-      <Route path={"/residential"} component={Residential} />
+content = content.replace(importInsertPoint, importInsertPoint + locationImports);
+
+// Add routes before 404 route
+const routeInsertPoint = '      <Route path={"/residential"} component={Residential} />';
+const locationRoutes = `
       <Route path={"/locations/boyden-arbor"} component={BoydenArbor} />
       <Route path={"/locations/windsor-estates"} component={WindsorEstates} />
       <Route path={"/locations/fairwold-acres"} component={FairwoldAcres} />
@@ -97,35 +87,9 @@ function Router() {
       <Route path={"/locations/dutch-fork"} component={DutchFork} />
       <Route path={"/locations/fort-jackson"} component={FortJackson} />
       <Route path={"/locations/intown-columbia"} component={IntownColumbia} />
-      <Route path={"/locations/lower-richland"} component={LowerRichland} />
-      <Route path={"/404"} component={NotFound} />
-        {/* Final fallback route */}
-        <Route component={NotFound} />
-      </Switch>
-      <Footer />
-    </>
-  );
-}
+      <Route path={"/locations/lower-richland"} component={LowerRichland} />`;
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
+content = content.replace(routeInsertPoint, routeInsertPoint + locationRoutes);
 
-function App() {
-  return (
-    <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
-      </ThemeProvider>
-    </ErrorBoundary>
-  );
-}
-
-export default App;
+fs.writeFileSync(appPath, content);
+console.log('App.tsx updated with 38 location routes!');

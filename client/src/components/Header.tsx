@@ -14,7 +14,7 @@ export default function Header() {
             </div>
           </Link>
           
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             <Link href="/">
               <a className="text-foreground hover:text-primary transition-colors font-medium">
                 Home
@@ -23,6 +23,21 @@ export default function Header() {
             <Link href="/services">
               <a className="text-foreground hover:text-primary transition-colors font-medium">
                 Services
+              </a>
+            </Link>
+            <Link href="/emergency">
+              <a className="text-foreground hover:text-primary transition-colors font-medium">
+                Emergency
+              </a>
+            </Link>
+            <Link href="/commercial">
+              <a className="text-foreground hover:text-primary transition-colors font-medium">
+                Commercial
+              </a>
+            </Link>
+            <Link href="/residential">
+              <a className="text-foreground hover:text-primary transition-colors font-medium">
+                Residential
               </a>
             </Link>
           </nav>

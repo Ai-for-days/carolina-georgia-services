@@ -2,12 +2,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Thermometer, Wrench, Zap, MapPin, Building2, Home } from "lucide-react";
 import { richlandCountyLocations, services } from "@/data/locations";
+import SEO, { generateLocalBusinessSchema } from "@/components/SEO";
 
 export default function Services() {
   const cities = richlandCountyLocations.filter(loc => loc.type === 'city');
   const neighborhoods = richlandCountyLocations.filter(loc => loc.type === 'neighborhood');
   const communities = richlandCountyLocations.filter(loc => loc.type === 'community');
   const regions = richlandCountyLocations.filter(loc => loc.type === 'region');
+  
+  const schema = {
+    ...generateLocalBusinessSchema(),
+    "@type": "ProfessionalService",
+    "serviceType": ["HVAC Services", "Plumbing Services", "Electrical Services"]
+  };
 
   const serviceIcons = {
     thermometer: Thermometer,
@@ -17,6 +24,12 @@ export default function Services() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="HVAC, Plumbing & Electrical Services | Richland County SC"
+        description="Complete HVAC, plumbing & electrical solutions for residential & commercial properties in Columbia, Irmo, Cayce, Forest Acres & all 38 Richland County locations. Emergency service available 24/7."
+        keywords="HVAC services Richland County, plumbing services Columbia SC, electrical services Richland County, AC repair, furnace installation, water heater, electrical panel upgrade"
+        schema={schema}
+      />
       {/* Hero Section */}
       <section className="bg-primary text-primary-foreground py-16 md:py-24">
         <div className="container">

@@ -3,12 +3,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Link } from "wouter";
 import { Thermometer, Wrench, Zap, MapPin, Clock, Shield } from "lucide-react";
 import { richlandCountyLocations } from "@/data/locations";
+import SEO, { generateLocalBusinessSchema } from "@/components/SEO";
 
 export default function Home() {
   const cities = richlandCountyLocations.filter(loc => loc.type === 'city');
   
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="HVAC, Plumbing & Electrical Services | Richland County SC | Carolina Georgia Services"
+        description="24/7 emergency HVAC, plumbing & electrical service across all 38 Richland County locations including Columbia, Irmo, Cayce, Forest Acres. Licensed, insured, same-day appointments. Call now!"
+        keywords="HVAC Richland County, plumber Columbia SC, electrician Richland County, emergency HVAC, 24/7 plumber, AC repair Columbia, heating service SC"
+        schema={generateLocalBusinessSchema()}
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 opacity-10">
