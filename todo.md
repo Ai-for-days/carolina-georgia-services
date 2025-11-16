@@ -106,3 +106,10 @@
 - [x] Create Fort Jackson location page
 - [x] Create Intown/downtown location page
 - [x] Create Lower Richland location page
+
+## Deployment
+- [ ] Initialize git repository
+- [ ] Create GitHub repository
+- [ ] Push code to GitHub
+- [ ] Deploy to Vercel
+- [ ] Configure Vercel build settings
