@@ -12,6 +12,9 @@ import Residential from "./pages/Residential";
 import HVACServices from "./pages/HVACServices";
 import PlumbingServices from "./pages/PlumbingServices";
 import ElectricalServices from "./pages/ElectricalServices";
+import HVACCayce from "./pages/services/hvac-cayce";
+import PlumbingCayce from "./pages/services/plumbing-cayce";
+import ElectricalCayce from "./pages/services/electrical-cayce";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BoydenArbor from "./pages/locations/boyden-arbor";
@@ -66,6 +69,9 @@ function Router() {
       <Route path={"/services/hvac"} component={HVACServices} />
       <Route path={"/services/plumbing"} component={PlumbingServices} />
       <Route path={"/services/electrical"} component={ElectricalServices} />
+      <Route path={"/services/hvac-cayce-sc"} component={HVACCayce} />
+      <Route path={"/services/plumbing-cayce-sc"} component={PlumbingCayce} />
+      <Route path={"/services/electrical-cayce-sc"} component={ElectricalCayce} />
       <Route path={"/locations/boyden-arbor"} component={BoydenArbor} />
       <Route path={"/locations/windsor-estates"} component={WindsorEstates} />
       <Route path={"/locations/fairwold-acres"} component={FairwoldAcres} />

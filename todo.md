@@ -240,3 +240,13 @@
 - [ ] Push all changes to GitHub
 - [ ] Save checkpoint
 - [ ] Verify Vercel deployment
+
+## Cayce Service+Location Pages
+- [x] Create service data structure
+- [x] Build ServiceLocationTemplate component
+- [x] Create HVAC Services in Cayce SC page
+- [x] Create Plumbing Services in Cayce SC page
+- [x] Create Electrical Services in Cayce SC page
+- [x] Add routes to App.tsx
+- [ ] Push to GitHub
+- [ ] Deploy to Vercel production
