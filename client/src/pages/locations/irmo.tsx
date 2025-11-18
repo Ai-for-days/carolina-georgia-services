@@ -1,10 +1,6 @@
-import LocationPageTemplate from "@/components/LocationPageTemplate";
+import EmergencyLocationTemplate from "@/components/EmergencyLocationTemplate";
+import { locationData } from "@/data/locationData";
 
 export default function Irmo() {
-  return (
-    <LocationPageTemplate 
-      locationName="Irmo"
-      locationType="city"
-    />
-  );
+  return <EmergencyLocationTemplate location={locationData.irmo} />;
 }

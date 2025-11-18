@@ -201,9 +201,9 @@
 
 ## Emergency-Optimized Irmo & Forest Acres Pages
 - [x] Create comprehensive location data structure for all cities
-- [ ] Build EmergencyLocationTemplate component
-- [ ] Generate Irmo page using template
-- [ ] Generate Forest Acres page using template
+- [x] Build EmergencyLocationTemplate component
+- [x] Generate Irmo page using template
+- [x] Generate Forest Acres page using template
 
 ## Service+Location Combination Pages (18 pages)
 ### HVAC Services Pages
