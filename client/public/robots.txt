@@ -1,0 +1,22 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://carolina-georgia-services.vercel.app/sitemap.xml
+
+# Crawl-delay for respectful crawling (optional)
+Crawl-delay: 1
+
+# Disallow admin or private areas (if any in the future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all location pages
+Allow: /locations/
+
+# Allow all service pages
+Allow: /services
+Allow: /emergency
+Allow: /commercial
+Allow: /residential

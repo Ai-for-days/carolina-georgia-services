@@ -10,6 +10,10 @@ interface SEOProps {
 }
 
 export default function SEO({ title, description, keywords, canonical, schema }: SEOProps) {
+  // Auto-generate canonical URL if not provided
+  const baseUrl = 'https://carolina-georgia-services.vercel.app';
+  const currentPath = window.location.pathname;
+  const autoCanonical = canonical || `${baseUrl}${currentPath}`;
   useEffect(() => {
     // Set page title
     document.title = title;
@@ -34,16 +38,14 @@ export default function SEO({ title, description, keywords, canonical, schema }:
       metaKeywords.setAttribute('content', keywords);
     }
     
-    // Set canonical URL if provided
-    if (canonical) {
-      let linkCanonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-      if (!linkCanonical) {
-        linkCanonical = document.createElement('link');
-        linkCanonical.setAttribute('rel', 'canonical');
-        document.head.appendChild(linkCanonical);
-      }
-      linkCanonical.setAttribute('href', canonical);
+    // Set canonical URL (auto-generated or provided)
+    let linkCanonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
+    if (!linkCanonical) {
+      linkCanonical = document.createElement('link');
+      linkCanonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(linkCanonical);
     }
+    linkCanonical.setAttribute('href', autoCanonical);
     
     // Add structured data (schema.org) if provided
     if (schema) {
@@ -55,7 +57,7 @@ export default function SEO({ title, description, keywords, canonical, schema }:
       }
       scriptTag.textContent = JSON.stringify(schema);
     }
-  }, [title, description, keywords, canonical, schema]);
+  }, [title, description, keywords, autoCanonical, schema]);
   
   return null;
 }
