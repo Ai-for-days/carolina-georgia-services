@@ -130,3 +130,12 @@
 - [x] Optimize for Core Web Vitals (LCP, FID, CLS)
 - [x] Ensure fast mobile loading
 - [x] Update phone number to (888) 885-7330 across all pages
+
+## Detailed Service Pages
+- [x] Create detailed HVAC services page with all sections
+- [x] Create detailed Plumbing services page with all sections
+- [x] Create detailed Electrical services page with all sections
+- [x] Add routes for /services/hvac, /services/plumbing, /services/electrical
+- [ ] Update navigation to link to detailed service pages
+- [ ] Push changes to GitHub
+- [ ] Deploy to Vercel
