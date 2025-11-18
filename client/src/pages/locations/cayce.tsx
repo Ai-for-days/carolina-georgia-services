@@ -1,670 +1,525 @@
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle2, Clock, Phone, MapPin, Navigation, Cloud, Building2, Users, Zap } from 'lucide-react';
+import { Phone, Clock, MapPin, AlertCircle, CheckCircle2, Zap, Droplets, Flame } from 'lucide-react';
 import { Link } from 'wouter';
+import { useEffect } from 'react';
 
 export default function Cayce() {
+  // Schema markup for local business and emergency services
+  useEffect(() => {
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "HVACBusiness", "Plumber", "Electrician", "EmergencyService"],
+      "name": "Carolina Georgia Services - Cayce, SC",
+      "image": "https://carolinageorgiaservices.com/logo.webp",
+      "telephone": "+18888857330",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cayce",
+        "addressRegion": "SC",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.9657,
+        "longitude": -81.0734
+      },
+      "url": "https://carolinageorgiaservices.com/locations/cayce",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Cayce",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "South Carolina"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Emergency Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency HVAC Repair",
+              "description": "24/7 emergency air conditioning and heating repair in Cayce, SC"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Plumbing",
+              "description": "24/7 emergency plumbing services including burst pipes and water heater failures"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Electrical",
+              "description": "24/7 emergency electrical repairs and power restoration"
+            }
+          }
+        ]
+      }
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen">
       <SEO
-        title="HVAC, Plumbing & Electrical Services in Cayce, SC | Carolina Georgia Services"
-        description="Expert HVAC, plumbing, and electrical services in Cayce, South Carolina. Serving all neighborhoods with 24/7 emergency service. Licensed, insured, and locally trusted."
-        keywords="HVAC Cayce SC, plumber Cayce, electrician Cayce, AC repair Cayce, emergency plumber Cayce SC"
+        title="Emergency HVAC, Plumbing & Electrical Cayce SC | 24/7 Service"
+        description="Need emergency HVAC, plumbing, or electrical service in Cayce, SC? Call (888) 885-7330 for 24/7 rapid response. AC failures, burst pipes, power outages - we fix it fast!"
+        keywords="emergency HVAC Cayce SC, emergency plumber Cayce, 24/7 electrician Cayce, AC repair Cayce, burst pipe Cayce, emergency service Cayce South Carolina"
       />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary/90 text-primary-foreground py-20">
+      {/* Emergency Hero Section */}
+      <section className="bg-gradient-to-br from-red-600 to-red-700 text-white py-16">
         <div className="container">
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-4">
-              <MapPin className="h-8 w-8" />
-              <span className="text-sm font-semibold uppercase tracking-wide">Cayce, South Carolina</span>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <AlertCircle className="h-10 w-10 animate-pulse" />
+              <span className="text-sm font-bold uppercase tracking-wide">24/7 Emergency Service Available Now</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Professional HVAC, Plumbing & Electrical Services in Cayce, SC
+              Emergency HVAC, Plumbing & Electrical Services in Cayce, SC
             </h1>
             <p className="text-xl mb-8 opacity-95">
-              Serving Cayce residents and businesses with reliable, expert service for over a decade. From the Riverwalk to Guignard Park, we're your local service experts.
+              AC stopped working in this South Carolina heat? Burst pipe flooding your home? Power out? We're here 24/7 with rapid response to Cayce emergencies. Average arrival time: <strong>15-20 minutes</strong>.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" variant="secondary">
-                <Phone className="mr-2 h-5 w-5" />
-                Call (888) 885-7330
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
+                <Phone className="mr-2 h-6 w-6" />
+                <a href="tel:+18888857330" className="font-bold">Call (888) 885-7330 Now</a>
               </Button>
-              <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
-                24/7 Emergency Service
+              <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6">
+                <Clock className="mr-2 h-6 w-6" />
+                Available 24/7/365
               </Button>
             </div>
+            <p className="mt-6 text-sm opacity-90">
+              <CheckCircle2 className="inline h-5 w-5 mr-1" />
+              Licensed & Insured • Upfront Pricing • No Overtime Charges
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Service Area Details */}
+      {/* Urgent Situations Section */}
       <section className="py-16 bg-background">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Complete Coverage Across Cayce</h2>
-            <p className="text-xl text-muted-foreground">
-              We serve every neighborhood and business district in Cayce, SC
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+              Experiencing an Emergency in Cayce? We're On Our Way
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 text-center">
+              When your AC fails during a scorching Cayce summer, a pipe bursts in your Riverwalk home, or you lose power at your business near Guignard Park, every minute counts. Carolina Georgia Services provides immediate emergency response to Cayce residents and businesses 24 hours a day, 7 days a week, 365 days a year.
             </p>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <Card>
-              <CardHeader>
-                <MapPin className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Service Area</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Complete coverage of Cayce city limits and surrounding areas:
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li>• Downtown Cayce</li>
-                  <li>• Cayce Riverwalk District</li>
-                  <li>• Guignard Park Area</li>
-                  <li>• Knox Abbott Drive Corridor</li>
-                  <li>• Airport Boulevard Area</li>
-                  <li>• State Street District</li>
-                  <li>• Congaree River Waterfront</li>
-                  <li>• Industrial Parks</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Clock className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Response Times</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Fast response times across all Cayce neighborhoods:
-                </p>
-                <div className="space-y-3 text-sm">
-                  <div>
-                    <div className="font-semibold">Emergency Service</div>
-                    <div className="text-muted-foreground">15-30 minutes citywide</div>
-                  </div>
-                  <div>
-                    <div className="font-semibold">Same-Day Service</div>
-                    <div className="text-muted-foreground">Within 2-4 hours</div>
-                  </div>
-                  <div>
-                    <div className="font-semibold">Scheduled Appointments</div>
-                    <div className="text-muted-foreground">Next available slot</div>
-                  </div>
-                  <div className="mt-4 p-3 bg-primary/10 rounded">
-                    <strong>Average arrival:</strong> 22 minutes for emergencies
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Navigation className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Easy to Find</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Conveniently located to serve all of Cayce quickly:
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                    <span>Minutes from I-77 & I-26</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                    <span>Central Cayce location</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                    <span>GPS-tracked service vehicles</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                    <span>Real-time arrival updates</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Driving Directions */}
-      <section className="py-16 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How to Find Us in Cayce</h2>
-            <p className="text-xl text-muted-foreground">
-              Easy access from major Cayce landmarks and thoroughfares
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <Card>
-              <CardHeader>
-                <CardTitle>From Cayce Riverwalk</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm">
-                <p>1. Head east on State Street toward Knox Abbott Drive</p>
-                <p>2. Turn right onto Knox Abbott Drive</p>
-                <p>3. Continue for 1.2 miles</p>
-                <p>4. We serve the entire Cayce area - call for exact directions</p>
-                <p className="font-semibold mt-4">Drive time: 5-7 minutes</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>From Guignard Park</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm">
-                <p>1. Exit park onto Frink Street</p>
-                <p>2. Turn left onto 12th Street</p>
-                <p>3. Continue to Knox Abbott Drive</p>
-                <p>4. Turn right - we're nearby</p>
-                <p className="font-semibold mt-4">Drive time: 4-6 minutes</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>From I-77 / I-26 Interchange</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm">
-                <p>1. Take I-77 South to Exit 5 (Knox Abbott Drive)</p>
-                <p>2. Turn right onto Knox Abbott Drive</p>
-                <p>3. Continue through Cayce</p>
-                <p>4. Call (888) 885-7330 for specific directions to your location</p>
-                <p className="font-semibold mt-4">Drive time: 8-10 minutes</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>From Cayce City Hall</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm">
-                <p>1. Head south on Knox Abbott Drive</p>
-                <p>2. Continue past Guignard Park</p>
-                <p>3. We serve all of Cayce - we'll come to you!</p>
-                <p>4. Available 24/7 for emergencies</p>
-                <p className="font-semibold mt-4">Drive time: 3-5 minutes</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Weather Challenges */}
-      <section className="py-16 bg-background">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Cayce Weather & Your Home Systems</h2>
-            <p className="text-xl text-muted-foreground">
-              How Cayce's climate affects your HVAC, plumbing, and electrical systems
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <Cloud className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Hot, Humid Summers</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Cayce summers average 90°F+ with high humidity near the Congaree River.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Issues:</div>
-                  <ul className="space-y-1 ml-4">
-                    <li>• AC overworking & breakdowns</li>
-                    <li>• High humidity causing mold</li>
-                    <li>• Increased energy bills</li>
-                    <li>• Frozen evaporator coils</li>
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <Card className="border-red-200">
+                <CardHeader>
+                  <Flame className="h-12 w-12 text-red-600 mb-2" />
+                  <CardTitle className="text-red-600">HVAC Emergencies</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li>• AC stopped cooling (critical in SC heat)</li>
+                    <li>• Furnace won't heat (winter cold snaps)</li>
+                    <li>• Strange noises or burning smells</li>
+                    <li>• System won't turn on</li>
+                    <li>• Refrigerant leaks</li>
+                    <li>• Frozen coils or lines</li>
                   </ul>
-                  <div className="mt-4 p-3 bg-primary/10 rounded">
-                    <strong>Our Solution:</strong> Preventive AC maintenance, dehumidifier installation, energy-efficient upgrades
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                  <p className="mt-4 text-sm font-semibold text-red-600">
+                    Call <a href="tel:+18888857330" className="underline">(888) 885-7330</a> immediately
+                  </p>
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardHeader>
-                <Cloud className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Severe Thunderstorms</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Cayce experiences frequent severe storms, especially spring and summer.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Issues:</div>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Power surges damaging HVAC</li>
-                    <li>• Lightning strikes</li>
-                    <li>• Flooding from heavy rain</li>
+              <Card className="border-blue-200">
+                <CardHeader>
+                  <Droplets className="h-12 w-12 text-blue-600 mb-2" />
+                  <CardTitle className="text-blue-600">Plumbing Emergencies</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Burst pipes flooding your property</li>
+                    <li>• Sewer backups or overflows</li>
+                    <li>• Water heater failures (no hot water)</li>
+                    <li>• Major leaks or water damage</li>
+                    <li>• Clogged drains backing up</li>
                     <li>• Sump pump failures</li>
                   </ul>
-                  <div className="mt-4 p-3 bg-primary/10 rounded">
-                    <strong>Our Solution:</strong> Whole-home surge protection, generator installation, sump pump service
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                  <p className="mt-4 text-sm font-semibold text-blue-600">
+                    24/7 emergency plumber: <a href="tel:+18888857330" className="underline">(888) 885-7330</a>
+                  </p>
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardHeader>
-                <Cloud className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Mild Winters</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Winters are mild but occasional freezes can cause problems.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Issues:</div>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Frozen pipes during cold snaps</li>
-                    <li>• Heat pump failures</li>
-                    <li>• Water heater strain</li>
-                    <li>• Outdoor faucet freezing</li>
+              <Card className="border-yellow-200">
+                <CardHeader>
+                  <Zap className="h-12 w-12 text-yellow-600 mb-2" />
+                  <CardTitle className="text-yellow-600">Electrical Emergencies</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Complete power loss</li>
+                    <li>• Sparking outlets or switches</li>
+                    <li>• Burning electrical smell</li>
+                    <li>• Tripped breakers that won't reset</li>
+                    <li>• Storm damage to electrical system</li>
+                    <li>• Exposed or damaged wiring</li>
                   </ul>
-                  <div className="mt-4 p-3 bg-primary/10 rounded">
-                    <strong>Our Solution:</strong> Pipe insulation, heat pump maintenance, emergency burst pipe repair
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Major Employers */}
-      <section className="py-16 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Serving Cayce's Major Employers</h2>
-            <p className="text-xl text-muted-foreground">
-              Trusted by businesses and organizations throughout Cayce
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card>
-              <CardHeader>
-                <Building2 className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Government & Public</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• City of Cayce</li>
-                  <li>• Cayce Public Safety</li>
-                  <li>• Lexington County offices</li>
-                  <li>• Public schools</li>
-                  <li>• Municipal facilities</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Building2 className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Healthcare</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• Medical offices</li>
-                  <li>• Dental practices</li>
-                  <li>• Urgent care centers</li>
-                  <li>• Physical therapy clinics</li>
-                  <li>• Veterinary hospitals</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Building2 className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Retail & Hospitality</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• Restaurants & cafes</li>
-                  <li>• Shopping centers</li>
-                  <li>• Hotels & motels</li>
-                  <li>• Auto dealerships</li>
-                  <li>• Gas stations</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Building2 className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Industrial</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• Manufacturing plants</li>
-                  <li>• Warehouses</li>
-                  <li>• Distribution centers</li>
-                  <li>• Industrial parks</li>
-                  <li>• Commercial properties</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="mt-12 text-center">
-            <p className="text-lg mb-6">
-              Need commercial HVAC, plumbing, or electrical service for your Cayce business?
-            </p>
-            <Link href="/commercial">
-              <Button size="lg">
-                View Commercial Services
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Neighborhood Content */}
-      <section className="py-16 bg-background">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Cayce Neighborhoods We Serve</h2>
-            <p className="text-xl text-muted-foreground">
-              Expert service in every corner of Cayce, SC
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <Card>
-              <CardHeader>
-                <CardTitle>Downtown Cayce & Riverwalk</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Historic downtown area along the Congaree River with mixed residential and commercial properties.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Service Needs:</div>
-                  <ul className="space-y-1">
-                    <li>• Older home plumbing updates</li>
-                    <li>• Historic building HVAC</li>
-                    <li>• Electrical panel upgrades</li>
-                    <li>• Commercial restaurant equipment</li>
-                  </ul>
-                  <div className="mt-3 text-primary font-semibold">
-                    Response time: 15-20 minutes
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Guignard Park Area</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Residential neighborhoods surrounding Guignard Park with family homes built 1970s-2000s.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Service Needs:</div>
-                  <ul className="space-y-1">
-                    <li>• AC replacement (aging units)</li>
-                    <li>• Water heater installation</li>
-                    <li>• Drain cleaning</li>
-                    <li>• Ceiling fan installation</li>
-                  </ul>
-                  <div className="mt-3 text-primary font-semibold">
-                    Response time: 18-25 minutes
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Knox Abbott Drive Corridor</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Major commercial corridor with businesses, restaurants, and retail establishments.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Service Needs:</div>
-                  <ul className="space-y-1">
-                    <li>• Commercial HVAC maintenance</li>
-                    <li>• Restaurant plumbing</li>
-                    <li>• Parking lot lighting</li>
-                    <li>• Emergency repairs</li>
-                  </ul>
-                  <div className="mt-3 text-primary font-semibold">
-                    Response time: 15-22 minutes
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Airport Boulevard Area</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Mix of residential and light industrial near Columbia Metropolitan Airport.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Service Needs:</div>
-                  <ul className="space-y-1">
-                    <li>• Industrial electrical work</li>
-                    <li>• Commercial plumbing</li>
-                    <li>• Warehouse HVAC</li>
-                    <li>• Generator installation</li>
-                  </ul>
-                  <div className="mt-3 text-primary font-semibold">
-                    Response time: 20-28 minutes
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Competitor Comparison */}
-      <section className="py-16 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Cayce Residents Choose Us</h2>
-            <p className="text-xl text-muted-foreground">
-              See how we compare to other Cayce service providers
-            </p>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse bg-background rounded-lg overflow-hidden">
-                <thead>
-                  <tr className="bg-primary text-primary-foreground">
-                    <th className="p-4 text-left">Feature</th>
-                    <th className="p-4 text-center">Carolina Georgia Services</th>
-                    <th className="p-4 text-center">Other Local Companies</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b">
-                    <td className="p-4 font-semibold">All 3 Services (HVAC, Plumbing, Electrical)</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center text-muted-foreground">Usually only 1 service</td>
-                  </tr>
-                  <tr className="border-b bg-muted/20">
-                    <td className="p-4 font-semibold">24/7 Emergency Service</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center text-muted-foreground">Limited hours</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="p-4 font-semibold">Average Response Time</td>
-                    <td className="p-4 text-center font-semibold text-primary">15-30 minutes</td>
-                    <td className="p-4 text-center text-muted-foreground">45-90 minutes</td>
-                  </tr>
-                  <tr className="border-b bg-muted/20">
-                    <td className="p-4 font-semibold">Upfront Pricing</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center text-muted-foreground">Often surprise charges</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="p-4 font-semibold">Licensed & Insured</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                  </tr>
-                  <tr className="border-b bg-muted/20">
-                    <td className="p-4 font-semibold">Warranty on Work</td>
-                    <td className="p-4 text-center font-semibold text-primary">Yes - Parts & Labor</td>
-                    <td className="p-4 text-center text-muted-foreground">Limited or none</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="p-4 font-semibold">Serves All Cayce Neighborhoods</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center text-muted-foreground">Limited coverage</td>
-                  </tr>
-                  <tr className="bg-muted/20">
-                    <td className="p-4 font-semibold">Online Scheduling</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center text-muted-foreground">Phone only</td>
-                  </tr>
-                </tbody>
-              </table>
+                  <p className="mt-4 text-sm font-semibold text-yellow-600">
+                    Emergency electrician: <a href="tel:+18888857330" className="underline">(888) 885-7330</a>
+                  </p>
+                </CardContent>
+              </Card>
             </div>
 
-            <div className="mt-8 p-6 bg-primary/10 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">The Carolina Georgia Services Advantage in Cayce:</h3>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span><strong>One call does it all:</strong> HVAC, plumbing, and electrical under one roof</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span><strong>Faster response:</strong> Average 22-minute arrival for Cayce emergencies</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span><strong>Local expertise:</strong> We understand Cayce's unique climate and building challenges</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span><strong>Transparent pricing:</strong> No hidden fees or surprise charges - ever</span>
-                </li>
-              </ul>
+            <div className="bg-red-50 border-l-4 border-red-600 p-6 mb-8">
+              <div className="flex items-start gap-3">
+                <AlertCircle className="h-6 w-6 text-red-600 shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-lg mb-2">Don't Wait - Call Now</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Emergency situations worsen quickly. A small leak becomes major water damage. A struggling AC unit fails completely in 95°F heat. An electrical issue becomes a fire hazard. Our Cayce emergency team is standing by right now to help you.
+                  </p>
+                  <Button size="lg" className="bg-red-600 hover:bg-red-700">
+                    <Phone className="mr-2 h-5 w-5" />
+                    <a href="tel:+18888857330">Call (888) 885-7330 - We Answer Immediately</a>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="py-16 bg-background">
+      {/* Why Cayce Trusts Us */}
+      <section className="py-16 bg-muted/30">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services in Cayce</h2>
-          </div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+              Why Cayce Residents Call Us First in Emergencies
+            </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <Zap className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>HVAC Services</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• AC Installation & Repair</li>
-                  <li>• Heating System Service</li>
-                  <li>• Duct Cleaning & Sealing</li>
-                  <li>• Preventive Maintenance</li>
-                  <li>• Emergency 24/7 Service</li>
-                </ul>
-                <Link href="/services/hvac">
-                  <Button variant="outline" className="w-full mt-4">
-                    Learn More
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card>
+                <CardHeader>
+                  <Clock className="h-10 w-10 text-primary mb-2" />
+                  <CardTitle>Fastest Response in Cayce</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    We know Cayce inside and out. From the Riverwalk to Guignard Park, from City Hall to the Congaree River, we reach you fast. Our average emergency response time in Cayce is just 15-20 minutes - not hours like other companies.
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Riverwalk area:</strong> 12-18 minutes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Guignard Park vicinity:</strong> 15-20 minutes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Near I-77/I-26:</strong> 10-15 minutes</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardHeader>
-                <Zap className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Plumbing Services</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• Leak Detection & Repair</li>
-                  <li>• Drain Cleaning</li>
-                  <li>• Water Heater Service</li>
-                  <li>• Pipe Repair & Replacement</li>
-                  <li>• Emergency Plumber</li>
-                </ul>
-                <Link href="/services/plumbing">
-                  <Button variant="outline" className="w-full mt-4">
-                    Learn More
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+              <Card>
+                <CardHeader>
+                  <CheckCircle2 className="h-10 w-10 text-primary mb-2" />
+                  <CardTitle>All Three Trades - One Call</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Unlike other companies that only handle one trade, we do it all. HVAC, plumbing, and electrical - all under one roof. When your AC fails and you discover a water leak, you don't need to call multiple contractors. One call to <a href="tel:+18888857330" className="text-primary font-semibold underline">(888) 885-7330</a> handles everything.
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Licensed HVAC technicians</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Master plumbers on staff</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Licensed electricians ready 24/7</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardHeader>
-                <Zap className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Electrical Services</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• Electrical Repairs</li>
-                  <li>• Panel Upgrades</li>
-                  <li>• Lighting Installation</li>
-                  <li>• Generator Installation</li>
-                  <li>• Emergency Electrician</li>
-                </ul>
-                <Link href="/services/electrical">
-                  <Button variant="outline" className="w-full mt-4">
-                    Learn More
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+              <Card>
+                <CardHeader>
+                  <MapPin className="h-10 w-10 text-primary mb-2" />
+                  <CardTitle>We Know Cayce's Challenges</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Cayce's location along the Congaree River, combined with South Carolina's brutal summer heat and humidity, creates unique challenges for home systems. We understand what Cayce properties face:
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Summer heat stress:</strong> AC units work overtime in 95-100°F temperatures</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>High humidity:</strong> Causes mold, condensation issues, and system strain</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Flood risk:</strong> River proximity means sump pumps and drainage are critical</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Severe storms:</strong> Lightning, power surges, and wind damage</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <Phone className="h-10 w-10 text-primary mb-2" />
+                  <CardTitle>Transparent Emergency Pricing</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    No surprise charges. No "emergency fees" that triple your bill. We provide upfront pricing before we start work, even at 2 AM. You'll know exactly what you're paying before we fix your emergency.
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>No overtime charges for nights/weekends</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Upfront quotes before work begins</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Comprehensive warranty on all repairs</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Serve Your Cayce Home or Business</h2>
-          <p className="text-xl mb-8 opacity-95 max-w-2xl mx-auto">
-            Call now for fast, reliable HVAC, plumbing, or electrical service anywhere in Cayce, SC
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" variant="secondary">
-              <Phone className="mr-2 h-5 w-5" />
-              Call (888) 885-7330
-            </Button>
-            <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
-              24/7 Emergency Service
-            </Button>
+      {/* Serving Cayce Businesses */}
+      <section className="py-16 bg-background">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+              Trusted by Cayce's Major Employers & Businesses
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 text-center">
+              From City Hall to the hospitals, from manufacturing facilities to retail stores, Cayce businesses trust us for emergency commercial HVAC, plumbing, and electrical service. When your business operations are at risk, we respond immediately.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Commercial Emergency Response</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    We serve Cayce's business community including:
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li>• City of Cayce government facilities</li>
+                    <li>• Lexington Medical Center Cayce</li>
+                    <li>• Manufacturing plants along Knox Abbott Drive</li>
+                    <li>• Retail stores and restaurants</li>
+                    <li>• Office buildings and professional services</li>
+                    <li>• Warehouses and distribution centers</li>
+                  </ul>
+                  <p className="mt-4 text-sm">
+                    <strong>Commercial emergency line:</strong> <a href="tel:+18888857330" className="text-primary font-semibold underline">(888) 885-7330</a>
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Why Businesses Choose Us</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Minimize downtime:</strong> We understand lost business time costs money</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>After-hours service:</strong> We work around your business schedule</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Preventive maintenance:</strong> Avoid emergencies with regular service</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Commercial expertise:</strong> Large systems, complex issues - we handle it</span>
+                    </li>
+                  </ul>
+                  <Link href="/commercial">
+                    <Button variant="outline" className="w-full mt-4">
+                      View Commercial Services
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
           </div>
-          <p className="mt-6 text-sm opacity-90">
-            Serving Cayce, SC and all surrounding Richland County communities
-          </p>
+        </div>
+      </section>
+
+      {/* Weather-Specific Emergencies */}
+      <section className="py-16 bg-muted/30">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+              Cayce Weather Emergencies We Handle Daily
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 text-center">
+              South Carolina's extreme weather puts constant stress on your home systems. Here's what we see most often in Cayce:
+            </p>
+
+            <div className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Flame className="h-6 w-6 text-red-600" />
+                    Summer Heat Emergencies (June-September)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    When temperatures hit 95-100°F with oppressive humidity, AC failures become life-threatening emergencies, especially for elderly residents and young children. We see a surge in calls when:
+                  </p>
+                  <ul className="space-y-2 text-sm mb-4">
+                    <li>• AC units fail under extreme load</li>
+                    <li>• Compressors burn out from overwork</li>
+                    <li>• Refrigerant leaks cause complete cooling loss</li>
+                    <li>• Electrical panels trip from AC power draw</li>
+                  </ul>
+                  <p className="text-sm font-semibold">
+                    <strong>AC emergency? Don't suffer in dangerous heat.</strong> Call <a href="tel:+18888857330" className="text-primary underline">(888) 885-7330</a> now for same-day AC repair.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Droplets className="h-6 w-6 text-blue-600" />
+                    Storm & Flood Emergencies (Year-Round)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Cayce's proximity to the Congaree River and severe thunderstorms create plumbing and electrical emergencies:
+                  </p>
+                  <ul className="space-y-2 text-sm mb-4">
+                    <li>• Sump pump failures causing basement flooding</li>
+                    <li>• Lightning strikes damaging electrical systems</li>
+                    <li>• Power surges destroying HVAC equipment</li>
+                    <li>• Sewer backups during heavy rains</li>
+                  </ul>
+                  <p className="text-sm font-semibold">
+                    <strong>Flooding or storm damage?</strong> Call our 24/7 emergency line: <a href="tel:+18888857330" className="text-primary underline">(888) 885-7330</a>
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Zap className="h-6 w-6 text-yellow-600" />
+                    Winter Cold Snap Emergencies (December-February)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    While Cayce winters are mild, sudden cold snaps catch homeowners off guard:
+                  </p>
+                  <ul className="space-y-2 text-sm mb-4">
+                    <li>• Frozen pipes bursting when temperatures drop below freezing</li>
+                    <li>• Heat pumps failing in extreme cold</li>
+                    <li>• Water heaters struggling with increased demand</li>
+                    <li>• Furnaces that haven't run in months refusing to start</li>
+                  </ul>
+                  <p className="text-sm font-semibold">
+                    <strong>No heat or burst pipes?</strong> Emergency heating and plumbing: <a href="tel:+18888857330" className="text-primary underline">(888) 885-7330</a>
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final Emergency CTA */}
+      <section className="py-16 bg-red-600 text-white">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <AlertCircle className="h-16 w-16 mx-auto mb-6 animate-pulse" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Don't Wait - Your Emergency Won't Fix Itself
+            </h2>
+            <p className="text-xl mb-8 opacity-95">
+              Every minute you wait, the problem gets worse and more expensive. Our Cayce emergency team is standing by RIGHT NOW - fully stocked trucks, experienced technicians, ready to roll. We answer our phones 24/7/365, even on holidays.
+            </p>
+            <div className="space-y-4 mb-8">
+              <div className="flex items-center justify-center gap-3 text-lg">
+                <Phone className="h-6 w-6" />
+                <span className="font-bold">Emergency Hotline:</span>
+                <a href="tel:+18888857330" className="text-3xl font-bold underline">(888) 885-7330</a>
+              </div>
+              <p className="text-sm opacity-90">
+                <Clock className="inline h-5 w-5 mr-1" />
+                Average response time in Cayce: 15-20 minutes
+              </p>
+            </div>
+            <Button size="lg" variant="secondary" className="text-xl px-12 py-8">
+              <Phone className="mr-3 h-8 w-8" />
+              <a href="tel:+18888857330" className="font-bold">Call Now - We're Waiting For Your Call</a>
+            </Button>
+            <p className="mt-8 text-sm opacity-90">
+              Serving all of Cayce, SC including Riverwalk, Guignard Park, Knox Abbott Drive, State Street, and all surrounding areas. Licensed, insured, and trusted by your neighbors.
+            </p>
+          </div>
         </div>
       </section>
     </div>
