@@ -273,5 +273,5 @@
 - [x] Add links from Columbia location page to Columbia service pages
 - [x] Add links from Forest Acres location page to Forest Acres service pages
 - [x] Add links from service+location pages back to location pages (already in template)
-- [ ] Push to GitHub
-- [ ] Deploy to Vercel
+- [x] Push to GitHub
+- [x] Deploy to Vercel (auto-deploys from GitHub)
