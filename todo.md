@@ -250,3 +250,10 @@
 - [x] Add routes to App.tsx
 - [x] Push to GitHub
 - [x] Deploy to Vercel production (auto-deploys from GitHub)
+
+## Sitemap Update
+- [x] Update sitemap.xml with all 38 location pages
+- [x] Add service+location pages to sitemap
+- [x] Add detailed service pages to sitemap
+- [ ] Push to GitHub
+- [ ] Verify on Vercel
