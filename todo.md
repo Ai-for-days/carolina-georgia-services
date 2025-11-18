@@ -248,5 +248,5 @@
 - [x] Create Plumbing Services in Cayce SC page
 - [x] Create Electrical Services in Cayce SC page
 - [x] Add routes to App.tsx
-- [ ] Push to GitHub
-- [ ] Deploy to Vercel production
+- [x] Push to GitHub
+- [x] Deploy to Vercel production (auto-deploys from GitHub)
