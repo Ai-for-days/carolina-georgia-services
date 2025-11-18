@@ -255,5 +255,5 @@
 - [x] Update sitemap.xml with all 38 location pages
 - [x] Add service+location pages to sitemap
 - [x] Add detailed service pages to sitemap
-- [ ] Push to GitHub
-- [ ] Verify on Vercel
+- [x] Push to GitHub
+- [x] Verify on Vercel (auto-deploys from GitHub)
