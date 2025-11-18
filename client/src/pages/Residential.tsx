@@ -235,7 +235,7 @@ export default function Residential() {
           <a href="tel:+18005551234">
             <Button size="lg" variant="outline" className="text-lg px-8 bg-white text-secondary hover:bg-white/90">
               <Phone className="w-5 h-5 mr-2" />
-              Call 1-800-555-1234
+              Call (888) 885-7330
             </Button>
           </a>
         </div>

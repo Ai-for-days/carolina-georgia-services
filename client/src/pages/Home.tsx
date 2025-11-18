@@ -19,11 +19,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img 
-            src="/hero-hvac.jpg" 
-            alt="HVAC Service" 
+          <picture>
+            <source srcSet="/hero-hvac.webp" type="image/webp" />
+            <img 
+              src="/hero-hvac.jpg" 
+              alt="HVAC Service"
+              loading="lazy"
+              decoding="async" 
             className="w-full h-full object-cover"
           />
+          </picture>
         </div>
         <div className="container relative py-20 md:py-32">
           <div className="max-w-3xl">
@@ -41,7 +46,7 @@ export default function Home() {
               </Link>
               <a href="tel:+18005551234">
                 <Button size="lg" variant="outline" className="text-lg px-8 bg-white/10 hover:bg-white/20 border-white/30 text-white">
-                  Call 1-800-555-1234
+                  Call (888) 885-7330
                 </Button>
               </a>
             </div>
@@ -207,7 +212,7 @@ export default function Home() {
           </p>
           <a href="tel:+18005551234">
             <Button size="lg" variant="outline" className="text-lg px-8 bg-white text-secondary hover:bg-white/90">
-              Call 1-800-555-1234
+              Call (888) 885-7330
             </Button>
           </a>
         </div>

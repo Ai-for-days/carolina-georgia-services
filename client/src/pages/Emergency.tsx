@@ -57,7 +57,7 @@ export default function Emergency() {
               <a href="tel:+18005551234">
                 <Button size="lg" variant="secondary" className="text-xl px-10 py-6 h-auto">
                   <Phone className="w-6 h-6 mr-3" />
-                  Call 1-800-555-1234
+                  Call (888) 885-7330
                 </Button>
               </a>
             </div>
@@ -285,7 +285,7 @@ export default function Emergency() {
             <a href="tel:+18005551234">
               <Button size="lg" variant="secondary" className="text-2xl px-12 py-8 h-auto">
                 <Phone className="w-7 h-7 mr-3" />
-                1-800-555-1234
+                (888) 885-7330
               </Button>
             </a>
             <p className="mt-6 text-lg">

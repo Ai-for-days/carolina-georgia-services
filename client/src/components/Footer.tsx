@@ -20,7 +20,7 @@ export default function Footer() {
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <a href="tel:+18005551234" className="hover:text-secondary transition-colors">
-                    1-800-555-1234
+                    (888) 885-7330
                   </a>
                   <p className="text-sm text-primary-foreground/70">24/7 Emergency Service</p>
                 </div>

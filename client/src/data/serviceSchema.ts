@@ -5,10 +5,10 @@ export function generateComprehensiveServiceSchema() {
     "name": "Carolina Georgia Services",
     "@id": "https://carolina-georgia-services.vercel.app",
     "url": "https://carolina-georgia-services.vercel.app",
-    "logo": "https://carolina-georgia-services.vercel.app/hero-hvac.jpg",
-    "image": "https://carolina-georgia-services.vercel.app/hero-hvac.jpg",
+    "logo": "https://carolina-georgia-services.vercel.app/hero-hvac.webp",
+    "image": "https://carolina-georgia-services.vercel.app/hero-hvac.webp",
     "description": "Professional HVAC, plumbing, and electrical services for residential and commercial properties across South Carolina, North Carolina, and Georgia. 24/7 emergency service available.",
-    "telephone": "+1-800-555-1234",
+    "telephone": "+(888) 885-7330",
     "email": "info@carolinageorgiaservices.com",
     "priceRange": "$$",
     "openingHoursSpecification": {
@@ -114,7 +114,7 @@ export function generateComprehensiveServiceSchema() {
                   "@type": "ServiceChannel",
                   "servicePhone": {
                     "@type": "ContactPoint",
-                    "telephone": "+1-800-555-1234",
+                    "telephone": "+(888) 885-7330",
                     "contactType": "Emergency Service"
                   }
                 }
@@ -152,7 +152,7 @@ export function generateComprehensiveServiceSchema() {
                   "@type": "ServiceChannel",
                   "servicePhone": {
                     "@type": "ContactPoint",
-                    "telephone": "+1-800-555-1234",
+                    "telephone": "+(888) 885-7330",
                     "contactType": "Emergency Service"
                   }
                 }
@@ -286,7 +286,7 @@ export function generateComprehensiveServiceSchema() {
                   "@type": "ServiceChannel",
                   "servicePhone": {
                     "@type": "ContactPoint",
-                    "telephone": "+1-800-555-1234",
+                    "telephone": "+(888) 885-7330",
                     "contactType": "Emergency Service"
                   }
                 }

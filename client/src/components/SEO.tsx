@@ -68,7 +68,7 @@ export function generateLocalBusinessSchema(location?: string) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": APP_TITLE,
-    "image": "https://carolinageorgiaservices.com/hero-hvac.jpg",
+    "image": "https://carolina-georgia-services.vercel.app/hero-hvac.webp",
     "description": "Professional HVAC, plumbing, and electrical services for residential and commercial properties in South Carolina, North Carolina, and Georgia.",
     "address": {
       "@type": "PostalAddress",
@@ -84,7 +84,7 @@ export function generateLocalBusinessSchema(location?: string) {
       "longitude": -81.0348
     },
     "url": "https://carolinageorgiaservices.com",
-    "telephone": "+1-800-555-1234",
+    "telephone": "+(888) 885-7330",
     "priceRange": "$$",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",

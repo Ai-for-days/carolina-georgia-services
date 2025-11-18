@@ -9,6 +9,16 @@
     <link rel="icon" type="image/png" href="%VITE_APP_LOGO%" />
     <link rel="apple-touch-icon" href="%VITE_APP_LOGO%" />
     <title>%VITE_APP_TITLE%</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/hero-hvac.webp" as="image" type="image/webp" />
+    
+    <!-- Critical CSS for above-fold content -->
+    <style>
+      /* Inline critical CSS for fastest LCP */
+      *{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}.container{width:100%;max-width:1280px;margin:0 auto;padding:0 1rem}.hero-section{position:relative;background:linear-gradient(135deg,#1e40af 0%,#1e3a8a 100%);color:#fff;overflow:hidden;min-height:500px}.hero-content{position:relative;z-index:10;padding:5rem 0}.hero-title{font-size:clamp(2rem,5vw,3.75rem);font-weight:700;line-height:1.2;margin-bottom:1.5rem}.cta-button{display:inline-block;padding:.75rem 2rem;background:#ea580c;color:#fff;font-weight:600;border-radius:.375rem;text-decoration:none}img,picture{max-width:100%;height:auto;display:block}@media (max-width:768px){.container{padding:0 1rem}.hero-content{padding:3rem 0}}
+    </style>
+    
     <!-- Add Google Fonts here, example:
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
