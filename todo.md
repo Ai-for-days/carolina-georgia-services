@@ -198,3 +198,45 @@
 - [x] Replace Forest Acres page with emergency-optimized format (using Columbia template)
 - [x] Push all changes to GitHub
 - [x] Verify Vercel deployment (auto-deploys from GitHub)
+
+## Emergency-Optimized Irmo & Forest Acres Pages
+- [x] Create comprehensive location data structure for all cities
+- [ ] Build EmergencyLocationTemplate component
+- [ ] Generate Irmo page using template
+- [ ] Generate Forest Acres page using template
+
+## Service+Location Combination Pages (18 pages)
+### HVAC Services Pages
+- [ ] Create /hvac-services-cayce-sc page
+- [ ] Create /hvac-services-forest-acres-sc page
+- [ ] Create /hvac-services-columbia-sc page
+
+### Plumbing Services Pages
+- [ ] Create /plumbing-services-cayce-sc page
+- [ ] Create /plumbing-services-forest-acres-sc page
+- [ ] Create /plumbing-services-columbia-sc page
+
+### Electrical Services Pages
+- [ ] Create /electrical-services-cayce-sc page
+- [ ] Create /electrical-services-forest-acres-sc page
+- [ ] Create /electrical-services-columbia-sc page
+
+### Emergency HVAC Pages
+- [ ] Create /emergency-hvac-cayce-sc page
+- [ ] Create /emergency-hvac-forest-acres-sc page
+- [ ] Create /emergency-hvac-columbia-sc page
+
+### Emergency Plumber Pages
+- [ ] Create /emergency-plumber-cayce-sc page
+- [ ] Create /emergency-plumber-forest-acres-sc page
+- [ ] Create /emergency-plumber-columbia-sc page
+
+### Emergency Electrician Pages
+- [ ] Create /emergency-electrician-cayce-sc page
+- [ ] Create /emergency-electrician-forest-acres-sc page
+- [ ] Create /emergency-electrician-columbia-sc page
+
+## Deployment
+- [ ] Push all changes to GitHub
+- [ ] Save checkpoint
+- [ ] Verify Vercel deployment
