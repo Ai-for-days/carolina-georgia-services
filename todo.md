@@ -191,3 +191,10 @@
 - [x] Implement schema markup for local business and emergency services
 - [x] Push to GitHub
 - [x] Verify Vercel deployment (auto-deploys from GitHub)
+
+## Emergency-Optimized Tier 1 Location Pages
+- [x] Replace Columbia page with emergency-optimized format
+- [x] Replace Irmo page with emergency-optimized format (using Columbia template)
+- [x] Replace Forest Acres page with emergency-optimized format (using Columbia template)
+- [ ] Push all changes to GitHub
+- [ ] Verify Vercel deployment

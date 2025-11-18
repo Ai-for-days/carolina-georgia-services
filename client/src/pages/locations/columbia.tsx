@@ -1,729 +1,533 @@
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle2, Clock, Phone, MapPin, Navigation, Cloud, Building2, Users, Zap } from 'lucide-react';
+import { Phone, Clock, MapPin, AlertCircle, CheckCircle2, Zap, Droplets, Flame } from 'lucide-react';
 import { Link } from 'wouter';
+import { useEffect } from 'react';
 
 export default function Columbia() {
+  // Schema markup for local business and emergency services
+  useEffect(() => {
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "HVACBusiness", "Plumber", "Electrician", "EmergencyService"],
+      "name": "Carolina Georgia Services - Columbia, SC",
+      "image": "https://carolinageorgiaservices.com/logo.webp",
+      "telephone": "+18888857330",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Columbia",
+        "addressRegion": "SC",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.0007,
+        "longitude": -81.0348
+      },
+      "url": "https://carolinageorgiaservices.com/locations/columbia",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Columbia",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "South Carolina"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Emergency Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency HVAC Repair",
+              "description": "24/7 emergency air conditioning and heating repair in Columbia, SC"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Plumbing",
+              "description": "24/7 emergency plumbing services including burst pipes and water heater failures"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Electrical",
+              "description": "24/7 emergency electrical repairs and power restoration"
+            }
+          }
+        ]
+      }
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen">
       <SEO
-        title="HVAC, Plumbing & Electrical Services in Columbia, SC | Carolina Georgia Services"
-        description="Expert HVAC, plumbing, and electrical services in Columbia, South Carolina. Serving downtown, USC, Five Points, and all Columbia neighborhoods with 24/7 emergency service."
-        keywords="HVAC Columbia SC, plumber Columbia, electrician Columbia, AC repair Columbia, emergency plumber Columbia SC, Columbia HVAC repair"
+        title="Emergency HVAC, Plumbing & Electrical Columbia SC | 24/7 Service"
+        description="Need emergency HVAC, plumbing, or electrical service in Columbia, SC? Call (888) 885-7330 for 24/7 rapid response. AC failures, burst pipes, power outages - we fix it fast!"
+        keywords="emergency HVAC Columbia SC, emergency plumber Columbia, 24/7 electrician Columbia, AC repair Columbia, burst pipe Columbia, emergency service Columbia South Carolina"
       />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary/90 text-primary-foreground py-20">
+      {/* Emergency Hero Section */}
+      <section className="bg-gradient-to-br from-red-600 to-red-700 text-white py-16">
         <div className="container">
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-4">
-              <MapPin className="h-8 w-8" />
-              <span className="text-sm font-semibold uppercase tracking-wide">Columbia, South Carolina</span>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <AlertCircle className="h-10 w-10 animate-pulse" />
+              <span className="text-sm font-bold uppercase tracking-wide">24/7 Emergency Service Available Now</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Columbia's Trusted HVAC, Plumbing & Electrical Experts
+              Emergency HVAC, Plumbing & Electrical Services in Columbia, SC
             </h1>
             <p className="text-xl mb-8 opacity-95">
-              Serving South Carolina's capital city for over a decade. From the State House to USC campus, from Five Points to Forest Acres, we're your local service experts.
+              AC died in Columbia's brutal heat? Pipe burst flooding your downtown home? Power outage at your USC-area business? We're here 24/7 with the fastest emergency response in the capital city. Average arrival time: <strong>12-18 minutes</strong>.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" variant="secondary">
-                <Phone className="mr-2 h-5 w-5" />
-                Call (888) 885-7330
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
+                <Phone className="mr-2 h-6 w-6" />
+                <a href="tel:+18888857330" className="font-bold">Call (888) 885-7330 Now</a>
               </Button>
-              <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
-                24/7 Emergency Service
+              <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6">
+                <Clock className="mr-2 h-6 w-6" />
+                Available 24/7/365
               </Button>
+            </div>
+            <p className="mt-6 text-sm opacity-90">
+              <CheckCircle2 className="inline h-5 w-5 mr-1" />
+              Licensed & Insured • Upfront Pricing • No Overtime Charges
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Urgent Situations Section */}
+      <section className="py-16 bg-background">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+              Columbia Emergency? We're Already On Our Way
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 text-center">
+              When your AC fails during a sweltering Columbia summer, a pipe bursts in your Shandon home, or you lose power at your State House-area office, every second matters. Carolina Georgia Services provides immediate emergency response across all Columbia neighborhoods 24 hours a day, 7 days a week, 365 days a year - including holidays.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <Card className="border-red-200">
+                <CardHeader>
+                  <Flame className="h-12 w-12 text-red-600 mb-2" />
+                  <CardTitle className="text-red-600">HVAC Emergencies</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li>• AC complete failure (life-threatening in SC heat)</li>
+                    <li>• Heat pump not working (winter emergencies)</li>
+                    <li>• Burning smell from HVAC system</li>
+                    <li>• System making loud grinding noises</li>
+                    <li>• Refrigerant leak (warm air blowing)</li>
+                    <li>• Frozen evaporator coils</li>
+                  </ul>
+                  <p className="mt-4 text-sm font-semibold text-red-600">
+                    Call <a href="tel:+18888857330" className="underline">(888) 885-7330</a> immediately
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-blue-200">
+                <CardHeader>
+                  <Droplets className="h-12 w-12 text-blue-600 mb-2" />
+                  <CardTitle className="text-blue-600">Plumbing Emergencies</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Burst pipes causing flooding</li>
+                    <li>• Sewer backup into home/business</li>
+                    <li>• Water heater complete failure</li>
+                    <li>• Major leaks damaging property</li>
+                    <li>• Toilet overflowing continuously</li>
+                    <li>• Sump pump failure (flooding risk)</li>
+                  </ul>
+                  <p className="mt-4 text-sm font-semibold text-blue-600">
+                    24/7 emergency plumber: <a href="tel:+18888857330" className="underline">(888) 885-7330</a>
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-yellow-200">
+                <CardHeader>
+                  <Zap className="h-12 w-12 text-yellow-600 mb-2" />
+                  <CardTitle className="text-yellow-600">Electrical Emergencies</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Total power loss to property</li>
+                    <li>• Sparking outlets (fire hazard)</li>
+                    <li>• Burning electrical odor</li>
+                    <li>• Breakers constantly tripping</li>
+                    <li>• Storm/lightning damage</li>
+                    <li>• Exposed wiring (dangerous)</li>
+                  </ul>
+                  <p className="mt-4 text-sm font-semibold text-yellow-600">
+                    Emergency electrician: <a href="tel:+18888857330" className="underline">(888) 885-7330</a>
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="bg-red-50 border-l-4 border-red-600 p-6 mb-8">
+              <div className="flex items-start gap-3">
+                <AlertCircle className="h-6 w-6 text-red-600 shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-lg mb-2">Don't Wait - Every Minute Counts</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Emergency situations escalate rapidly in Columbia's climate. A small leak becomes catastrophic water damage. A struggling AC unit fails completely when it hits 98°F. An electrical spark becomes a house fire. Our Columbia emergency team is standing by RIGHT NOW - fully stocked trucks, experienced technicians, ready to roll to your location.
+                  </p>
+                  <Button size="lg" className="bg-red-600 hover:bg-red-700">
+                    <Phone className="mr-2 h-5 w-5" />
+                    <a href="tel:+18888857330">Call (888) 885-7330 - We Answer Immediately</a>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Service Area Details */}
-      <section className="py-16 bg-background">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Complete Coverage Across Columbia</h2>
-            <p className="text-xl text-muted-foreground">
-              We serve every neighborhood, business district, and community in Columbia, SC
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <Card>
-              <CardHeader>
-                <MapPin className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Service Area</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Complete coverage of Columbia and surrounding areas:
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li>• Downtown Columbia</li>
-                  <li>• USC & Five Points</li>
-                  <li>• The Vista District</li>
-                  <li>• Shandon & Rosewood</li>
-                  <li>• Forest Acres</li>
-                  <li>• Eau Claire & Olympia</li>
-                  <li>• North Columbia</li>
-                  <li>• South Columbia</li>
-                  <li>• East Columbia</li>
-                  <li>• West Columbia Border</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Clock className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Response Times</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Fast response times across all Columbia areas:
-                </p>
-                <div className="space-y-3 text-sm">
-                  <div>
-                    <div className="font-semibold">Downtown/Vista</div>
-                    <div className="text-muted-foreground">12-20 minutes</div>
-                  </div>
-                  <div>
-                    <div className="font-semibold">USC/Five Points</div>
-                    <div className="text-muted-foreground">15-25 minutes</div>
-                  </div>
-                  <div>
-                    <div className="font-semibold">Shandon/Rosewood</div>
-                    <div className="text-muted-foreground">18-28 minutes</div>
-                  </div>
-                  <div>
-                    <div className="font-semibold">North/South Columbia</div>
-                    <div className="text-muted-foreground">20-30 minutes</div>
-                  </div>
-                  <div className="mt-4 p-3 bg-primary/10 rounded">
-                    <strong>Average arrival:</strong> 18 minutes citywide
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Navigation className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Easy Access</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Strategically located for rapid response across Columbia:
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                    <span>Minutes from I-26, I-77, I-20</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                    <span>Central Columbia location</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                    <span>GPS-tracked fleet</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                    <span>Real-time ETA updates</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Driving Directions */}
+      {/* Why Columbia Trusts Us */}
       <section className="py-16 bg-muted/30">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How to Find Us in Columbia</h2>
-            <p className="text-xl text-muted-foreground">
-              Easy access from major Columbia landmarks and interstates
-            </p>
-          </div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+              Why Columbia Calls Us First in Emergencies
+            </h2>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <Card>
-              <CardHeader>
-                <CardTitle>From SC State House</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm">
-                <p>1. Head north on Main Street</p>
-                <p>2. Turn right onto Gervais Street</p>
-                <p>3. Continue to Assembly Street</p>
-                <p>4. We serve all of Columbia - call for directions</p>
-                <p className="font-semibold mt-4">Drive time: 5-8 minutes</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>From USC Campus / Five Points</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm">
-                <p>1. Exit campus onto Harden Street</p>
-                <p>2. Head north toward downtown</p>
-                <p>3. Turn right onto Blossom Street</p>
-                <p>4. Call (888) 885-7330 for specific directions</p>
-                <p className="font-semibold mt-4">Drive time: 6-10 minutes</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>From Columbia Metropolitan Airport</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm">
-                <p>1. Take Airport Boulevard toward I-26</p>
-                <p>2. Merge onto I-26 East</p>
-                <p>3. Take exit for downtown Columbia</p>
-                <p>4. We'll come to you anywhere in Columbia!</p>
-                <p className="font-semibold mt-4">Drive time: 12-18 minutes</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>From I-26 / I-126 / I-77 Interchange</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm">
-                <p>1. Take I-126 East toward downtown</p>
-                <p>2. Exit at Assembly Street or Main Street</p>
-                <p>3. Follow signs to your Columbia neighborhood</p>
-                <p>4. Available 24/7 for emergencies</p>
-                <p className="font-semibold mt-4">Drive time: 8-12 minutes</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Weather Challenges */}
-      <section className="py-16 bg-background">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Columbia Weather & Your Home Systems</h2>
-            <p className="text-xl text-muted-foreground">
-              How Columbia's climate affects your HVAC, plumbing, and electrical systems
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <Cloud className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Extreme Summer Heat</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Columbia summers regularly hit 95-100°F with oppressive humidity. Capital city heat island effect makes it even hotter.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Issues:</div>
-                  <ul className="space-y-1 ml-4">
-                    <li>• AC units running 24/7</li>
-                    <li>• System breakdowns during heat waves</li>
-                    <li>• Skyrocketing energy bills</li>
-                    <li>• Refrigerant leaks</li>
-                    <li>• Compressor failures</li>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card>
+                <CardHeader>
+                  <Clock className="h-10 w-10 text-primary mb-2" />
+                  <CardTitle>Fastest Response Across All Columbia Neighborhoods</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    We know every street in Columbia. From downtown to Five Points, from Shandon to Forest Acres, from the Vista to Rosewood, we reach you faster than anyone else. Our average emergency response time in Columbia is just 12-18 minutes - not the 2-3 hours other companies make you wait.
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Downtown/State House area:</strong> 10-15 minutes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>USC/Five Points:</strong> 12-18 minutes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Shandon/Rosewood:</strong> 15-20 minutes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Forest Acres/Trenholm:</strong> 12-18 minutes</span>
+                    </li>
                   </ul>
-                  <div className="mt-4 p-3 bg-primary/10 rounded">
-                    <strong>Our Solution:</strong> Preventive maintenance plans, energy-efficient AC upgrades, emergency same-day service
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardHeader>
-                <Cloud className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Severe Storms & Flooding</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Columbia experiences severe thunderstorms, occasional hurricanes, and historic flooding (2015 flood).
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Issues:</div>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Power surges damaging HVAC/appliances</li>
-                    <li>• Lightning strikes</li>
-                    <li>• Basement/crawl space flooding</li>
-                    <li>• Sump pump failures</li>
-                    <li>• Sewer backups</li>
+              <Card>
+                <CardHeader>
+                  <CheckCircle2 className="h-10 w-10 text-primary mb-2" />
+                  <CardTitle>All Three Trades - One Emergency Call</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Unlike competitors who only handle one trade, we do it all. HVAC, plumbing, electrical - all under one roof with one emergency number. When your AC fails and you discover an electrical issue, you don't waste time calling multiple contractors. One call to <a href="tel:+18888857330" className="text-primary font-semibold underline">(888) 885-7330</a> solves everything.
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>State-licensed HVAC technicians</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Master plumbers available 24/7</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Licensed electricians on call</span>
+                    </li>
                   </ul>
-                  <div className="mt-4 p-3 bg-primary/10 rounded">
-                    <strong>Our Solution:</strong> Whole-home surge protection, backup generators, sump pump installation, emergency flood response
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardHeader>
-                <Cloud className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Mild Winters with Freezes</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Winters are generally mild, but sudden cold snaps and occasional ice storms cause problems.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Issues:</div>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Frozen pipes during cold snaps</li>
-                    <li>• Heat pump failures</li>
-                    <li>• Ice storm power outages</li>
-                    <li>• Water heater strain</li>
-                    <li>• Outdoor faucet damage</li>
+              <Card>
+                <CardHeader>
+                  <MapPin className="h-10 w-10 text-primary mb-2" />
+                  <CardTitle>We Understand Columbia's Unique Challenges</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Columbia's position at the confluence of the Saluda, Broad, and Congaree rivers, combined with South Carolina's extreme heat and the historic 2015 flood, creates unique challenges. We understand what Columbia properties face:
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Extreme summer heat:</strong> AC units struggle in 95-102°F temperatures with high humidity</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Flood vulnerability:</strong> River proximity means drainage and sump pumps are critical</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Historic homes:</strong> Shandon, Rosewood, and Elmwood have aging systems needing expert care</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Severe storms:</strong> Lightning strikes, power surges, and wind damage are common</span>
+                    </li>
                   </ul>
-                  <div className="mt-4 p-3 bg-primary/10 rounded">
-                    <strong>Our Solution:</strong> Pipe insulation, heat pump service, emergency burst pipe repair, generator backup
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+                </CardContent>
+              </Card>
 
-      {/* Major Employers */}
-      <section className="py-16 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Serving Columbia's Major Employers</h2>
-            <p className="text-xl text-muted-foreground">
-              Trusted by South Carolina's largest businesses and institutions
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card>
-              <CardHeader>
-                <Building2 className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Government</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• SC State Government</li>
-                  <li>• City of Columbia</li>
-                  <li>• Richland County</li>
-                  <li>• Fort Jackson (Army)</li>
-                  <li>• Federal offices</li>
-                  <li>• Court buildings</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Building2 className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Healthcare</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• Prisma Health</li>
-                  <li>• Lexington Medical Center</li>
-                  <li>• Palmetto Health</li>
-                  <li>• VA Hospital</li>
-                  <li>• Medical practices</li>
-                  <li>• Dental offices</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Building2 className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Education</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• University of South Carolina</li>
-                  <li>• Columbia College</li>
-                  <li>• Benedict College</li>
-                  <li>• Allen University</li>
-                  <li>• Richland School Districts</li>
-                  <li>• Private schools</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Building2 className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Business & Retail</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• BlueCross BlueShield SC</li>
-                  <li>• Colonial Life</li>
-                  <li>• SCANA/Dominion Energy</li>
-                  <li>• Hotels & restaurants</li>
-                  <li>• Shopping centers</li>
-                  <li>• Office buildings</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="mt-12 text-center">
-            <p className="text-lg mb-6">
-              Need commercial HVAC, plumbing, or electrical service for your Columbia business?
-            </p>
-            <Link href="/commercial">
-              <Button size="lg">
-                View Commercial Services
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Neighborhood Content */}
-      <section className="py-16 bg-background">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Columbia Neighborhoods We Serve</h2>
-            <p className="text-xl text-muted-foreground">
-              Expert service in every Columbia neighborhood
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Downtown & The Vista</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Historic downtown with State House, business district, and entertainment venues. Mix of historic and modern buildings.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Service Needs:</div>
-                  <ul className="space-y-1">
-                    <li>• Commercial HVAC maintenance</li>
-                    <li>• Restaurant plumbing</li>
-                    <li>• Historic building electrical</li>
-                    <li>• Emergency repairs</li>
+              <Card>
+                <CardHeader>
+                  <Phone className="h-10 w-10 text-primary mb-2" />
+                  <CardTitle>Honest Emergency Pricing - No Surprises</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    No hidden fees. No "emergency surcharges" that double your bill at 3 AM. We provide transparent, upfront pricing before we start any work - even in the middle of the night. You'll know exactly what you're paying before we fix your emergency.
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>No overtime charges for nights/weekends/holidays</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Upfront quotes before work begins</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Full warranty on all emergency repairs</span>
+                    </li>
                   </ul>
-                  <div className="mt-3 text-primary font-semibold">
-                    Response time: 12-20 minutes
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>USC Campus & Five Points</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  University area with student housing, apartments, and entertainment district. High-density residential.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Service Needs:</div>
-                  <ul className="space-y-1">
-                    <li>• Apartment HVAC service</li>
-                    <li>• Multi-unit plumbing</li>
-                    <li>• Electrical panel upgrades</li>
-                    <li>• Water heater replacement</li>
-                  </ul>
-                  <div className="mt-3 text-primary font-semibold">
-                    Response time: 15-25 minutes
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Shandon & Rosewood</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Established residential neighborhoods with historic homes (1920s-1950s) and tree-lined streets.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Service Needs:</div>
-                  <ul className="space-y-1">
-                    <li>• Older home plumbing updates</li>
-                    <li>• HVAC system replacement</li>
-                    <li>• Electrical rewiring</li>
-                    <li>• Duct sealing</li>
-                  </ul>
-                  <div className="mt-3 text-primary font-semibold">
-                    Response time: 18-28 minutes
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Forest Acres</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Upscale residential area with shopping centers. Mix of mid-century and newer homes.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Service Needs:</div>
-                  <ul className="space-y-1">
-                    <li>• AC replacement (aging units)</li>
-                    <li>• Smart thermostat installation</li>
-                    <li>• Tankless water heaters</li>
-                    <li>• Generator installation</li>
-                  </ul>
-                  <div className="mt-3 text-primary font-semibold">
-                    Response time: 20-30 minutes
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Eau Claire & Olympia</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Diverse neighborhoods with family homes built 1960s-1990s. Strong community feel.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Service Needs:</div>
-                  <ul className="space-y-1">
-                    <li>• HVAC maintenance</li>
-                    <li>• Drain cleaning</li>
-                    <li>• Ceiling fan installation</li>
-                    <li>• Water heater service</li>
-                  </ul>
-                  <div className="mt-3 text-primary font-semibold">
-                    Response time: 18-28 minutes
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>North & South Columbia</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Growing residential areas with newer subdivisions and commercial development.
-                </p>
-                <div className="space-y-2 text-sm">
-                  <div className="font-semibold">Common Service Needs:</div>
-                  <ul className="space-y-1">
-                    <li>• New construction electrical</li>
-                    <li>• HVAC installation</li>
-                    <li>• Plumbing for additions</li>
-                    <li>• Smart home wiring</li>
-                  </ul>
-                  <div className="mt-3 text-primary font-semibold">
-                    Response time: 20-30 minutes
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Competitor Comparison */}
-      <section className="py-16 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Columbia Residents Choose Us</h2>
-            <p className="text-xl text-muted-foreground">
-              See how we compare to other Columbia service providers
-            </p>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse bg-background rounded-lg overflow-hidden">
-                <thead>
-                  <tr className="bg-primary text-primary-foreground">
-                    <th className="p-4 text-left">Feature</th>
-                    <th className="p-4 text-center">Carolina Georgia Services</th>
-                    <th className="p-4 text-center">Other Columbia Companies</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b">
-                    <td className="p-4 font-semibold">All 3 Services (HVAC, Plumbing, Electrical)</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center text-muted-foreground">Usually only 1 service</td>
-                  </tr>
-                  <tr className="border-b bg-muted/20">
-                    <td className="p-4 font-semibold">24/7 True Emergency Service</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center text-muted-foreground">Limited hours or answering service</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="p-4 font-semibold">Average Response Time</td>
-                    <td className="p-4 text-center font-semibold text-primary">18 minutes</td>
-                    <td className="p-4 text-center text-muted-foreground">60-120 minutes</td>
-                  </tr>
-                  <tr className="border-b bg-muted/20">
-                    <td className="p-4 font-semibold">Upfront, Transparent Pricing</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center text-muted-foreground">Often hidden fees</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="p-4 font-semibold">Licensed & Insured</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                  </tr>
-                  <tr className="border-b bg-muted/20">
-                    <td className="p-4 font-semibold">Comprehensive Warranty</td>
-                    <td className="p-4 text-center font-semibold text-primary">Parts & Labor</td>
-                    <td className="p-4 text-center text-muted-foreground">Limited or parts only</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="p-4 font-semibold">Serves All Columbia Neighborhoods</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center text-muted-foreground">Limited coverage areas</td>
-                  </tr>
-                  <tr className="bg-muted/20">
-                    <td className="p-4 font-semibold">Same-Day Service Available</td>
-                    <td className="p-4 text-center"><CheckCircle2 className="h-6 w-6 text-green-600 mx-auto" /></td>
-                    <td className="p-4 text-center text-muted-foreground">Often 2-3 day wait</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="mt-8 p-6 bg-primary/10 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">The Carolina Georgia Services Advantage in Columbia:</h3>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span><strong>One call does it all:</strong> HVAC, plumbing, and electrical - no need to coordinate multiple contractors</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span><strong>Fastest response in Columbia:</strong> Average 18-minute arrival time vs. 60-120 minutes for competitors</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span><strong>Columbia expertise:</strong> We understand the capital city's unique challenges - from historic homes to modern high-rises</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span><strong>No surprise charges:</strong> Upfront pricing before we start work - what we quote is what you pay</span>
-                </li>
-              </ul>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Overview */}
+      {/* Serving Columbia Businesses & Major Employers */}
       <section className="py-16 bg-background">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services in Columbia</h2>
-          </div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+              Trusted by Columbia's Largest Employers & Businesses
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 text-center">
+              From the State House to Fort Jackson, from Prisma Health to the University of South Carolina, Columbia businesses and institutions trust us for emergency commercial HVAC, plumbing, and electrical service. When your operations are at risk, we respond immediately with commercial-grade solutions.
+            </p>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <Zap className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>HVAC Services</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• AC Installation & Repair</li>
-                  <li>• Heating System Service</li>
-                  <li>• Duct Cleaning & Sealing</li>
-                  <li>• Preventive Maintenance</li>
-                  <li>• Emergency 24/7 Service</li>
-                </ul>
-                <Link href="/services/hvac">
-                  <Button variant="outline" className="w-full mt-4">
-                    Learn More
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Commercial Emergency Response</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    We serve Columbia's major employers and business sectors:
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li>• State of South Carolina government facilities</li>
+                    <li>• Prisma Health, Lexington Medical, Palmetto Health</li>
+                    <li>• University of South Carolina campus buildings</li>
+                    <li>• Fort Jackson military installation</li>
+                    <li>• Manufacturing and distribution centers</li>
+                    <li>• Downtown office buildings and hotels</li>
+                    <li>• Retail and restaurant establishments</li>
+                  </ul>
+                  <p className="mt-4 text-sm">
+                    <strong>Commercial emergency line:</strong> <a href="tel:+18888857330" className="text-primary font-semibold underline">(888) 885-7330</a>
+                  </p>
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardHeader>
-                <Zap className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Plumbing Services</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• Leak Detection & Repair</li>
-                  <li>• Drain Cleaning</li>
-                  <li>• Water Heater Service</li>
-                  <li>• Pipe Repair & Replacement</li>
-                  <li>• Emergency Plumber</li>
-                </ul>
-                <Link href="/services/plumbing">
-                  <Button variant="outline" className="w-full mt-4">
-                    Learn More
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Zap className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Electrical Services</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm">
-                  <li>• Electrical Repairs</li>
-                  <li>• Panel Upgrades</li>
-                  <li>• Lighting Installation</li>
-                  <li>• Generator Installation</li>
-                  <li>• Emergency Electrician</li>
-                </ul>
-                <Link href="/services/electrical">
-                  <Button variant="outline" className="w-full mt-4">
-                    Learn More
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Why Columbia Businesses Choose Us</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Minimize downtime:</strong> We know every hour closed costs you money</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>After-hours service:</strong> We work around your business hours</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Preventive contracts:</strong> Avoid emergencies with regular maintenance</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span><strong>Commercial expertise:</strong> Large systems, complex issues - we handle it all</span>
+                    </li>
+                  </ul>
+                  <Link href="/commercial">
+                    <Button variant="outline" className="w-full mt-4">
+                      View Commercial Services
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Serve Your Columbia Home or Business</h2>
-          <p className="text-xl mb-8 opacity-95 max-w-2xl mx-auto">
-            Call now for fast, reliable HVAC, plumbing, or electrical service anywhere in Columbia, SC
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" variant="secondary">
-              <Phone className="mr-2 h-5 w-5" />
-              Call (888) 885-7330
+      {/* Weather-Specific Emergencies */}
+      <section className="py-16 bg-muted/30">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+              Columbia Weather Emergencies We Handle Every Day
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 text-center">
+              South Carolina's capital city faces extreme weather that constantly stresses home and business systems. Here's what we see most often:
+            </p>
+
+            <div className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Flame className="h-6 w-6 text-red-600" />
+                    Summer Heat Emergencies (May-September)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Columbia regularly hits 95-102°F with crushing humidity. AC failures become medical emergencies, especially for elderly residents, young children, and those with health conditions. We see emergency calls spike when:
+                  </p>
+                  <ul className="space-y-2 text-sm mb-4">
+                    <li>• AC units fail under extreme heat load</li>
+                    <li>• Compressors burn out from constant operation</li>
+                    <li>• Refrigerant leaks cause total cooling loss</li>
+                    <li>• Electrical panels overload from AC power draw</li>
+                    <li>• Ductwork leaks waste precious cool air</li>
+                  </ul>
+                  <p className="text-sm font-semibold">
+                    <strong>AC emergency? Don't risk heat stroke.</strong> Call <a href="tel:+18888857330" className="text-primary underline">(888) 885-7330</a> for same-day AC repair.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Droplets className="h-6 w-6 text-blue-600" />
+                    Storm & Flood Emergencies (Year-Round, Especially Fall)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    Columbia's three rivers and the devastating 2015 "1000-year flood" remind us that water emergencies are always a threat. Severe thunderstorms create immediate plumbing and electrical crises:
+                  </p>
+                  <ul className="space-y-2 text-sm mb-4">
+                    <li>• Sump pump failures causing rapid basement flooding</li>
+                    <li>• Lightning strikes destroying HVAC and electrical systems</li>
+                    <li>• Power surges frying expensive equipment</li>
+                    <li>• Sewer backups during heavy rainfall</li>
+                    <li>• Tree damage to power lines and roof penetrations</li>
+                  </ul>
+                  <p className="text-sm font-semibold">
+                    <strong>Flooding or storm damage?</strong> 24/7 emergency line: <a href="tel:+18888857330" className="text-primary underline">(888) 885-7330</a>
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Zap className="h-6 w-6 text-yellow-600" />
+                    Winter Cold Snap Emergencies (December-February)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    While Columbia winters are generally mild, sudden cold snaps catch homeowners unprepared:
+                  </p>
+                  <ul className="space-y-2 text-sm mb-4">
+                    <li>• Frozen pipes bursting when temperatures drop below 25°F</li>
+                    <li>• Heat pumps failing in extreme cold (backup heat needed)</li>
+                    <li>• Water heaters overwhelmed by increased demand</li>
+                    <li>• Furnaces that haven't run in months refusing to start</li>
+                    <li>• Outdoor faucets and irrigation systems freezing</li>
+                  </ul>
+                  <p className="text-sm font-semibold">
+                    <strong>No heat or burst pipes?</strong> Emergency service: <a href="tel:+18888857330" className="text-primary underline">(888) 885-7330</a>
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final Emergency CTA */}
+      <section className="py-16 bg-red-600 text-white">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <AlertCircle className="h-16 w-16 mx-auto mb-6 animate-pulse" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Your Emergency Won't Wait - Neither Should You
+            </h2>
+            <p className="text-xl mb-8 opacity-95">
+              Every minute you delay, the problem worsens and repair costs increase. Our Columbia emergency team is standing by RIGHT NOW with fully stocked trucks, experienced technicians, and the parts needed to fix your problem. We answer our phones 24/7/365 - even Christmas Day.
+            </p>
+            <div className="space-y-4 mb-8">
+              <div className="flex items-center justify-center gap-3 text-lg">
+                <Phone className="h-6 w-6" />
+                <span className="font-bold">Emergency Hotline:</span>
+                <a href="tel:+18888857330" className="text-3xl font-bold underline">(888) 885-7330</a>
+              </div>
+              <p className="text-sm opacity-90">
+                <Clock className="inline h-5 w-5 mr-1" />
+                Average response time in Columbia: 12-18 minutes
+              </p>
+            </div>
+            <Button size="lg" variant="secondary" className="text-xl px-12 py-8">
+              <Phone className="mr-3 h-8 w-8" />
+              <a href="tel:+18888857330" className="font-bold">Call Now - We're Ready For Your Call</a>
             </Button>
-            <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
-              24/7 Emergency Service
-            </Button>
+            <p className="mt-8 text-sm opacity-90">
+              Serving all of Columbia, SC including Downtown, Five Points, Shandon, Rosewood, Forest Acres, The Vista, Elmwood Park, and all surrounding neighborhoods. Licensed, insured, and trusted by your neighbors and Columbia's largest employers.
+            </p>
           </div>
-          <p className="mt-6 text-sm opacity-90">
-            Serving Columbia, SC and all surrounding Richland County communities
-          </p>
         </div>
       </section>
     </div>
