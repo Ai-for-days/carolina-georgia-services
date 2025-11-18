@@ -308,7 +308,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
                   <p className="text-sm text-gray-700 mb-4">
                     AC repair, heating, installation, and maintenance for {location.name} homes and businesses.
                   </p>
-                  <Link href="/services/hvac">
+                  <Link href={`/services/hvac-${location.slug}-sc`}>
                     <Button variant="outline" className="w-full">Learn More</Button>
                   </Link>
                 </CardContent>
@@ -321,7 +321,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
                   <p className="text-sm text-gray-700 mb-4">
                     Leak repair, drain cleaning, water heaters, and emergency plumbing for {location.name}.
                   </p>
-                  <Link href="/services/plumbing">
+                  <Link href={`/services/plumbing-${location.slug}-sc`}>
                     <Button variant="outline" className="w-full">Learn More</Button>
                   </Link>
                 </CardContent>
@@ -334,7 +334,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
                   <p className="text-sm text-gray-700 mb-4">
                     Panel upgrades, wiring, lighting, and electrical repairs for {location.name} properties.
                   </p>
-                  <Link href="/services/electrical">
+                  <Link href={`/services/electrical-${location.slug}-sc`}>
                     <Button variant="outline" className="w-full">Learn More</Button>
                   </Link>
                 </CardContent>

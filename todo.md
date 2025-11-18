@@ -257,3 +257,21 @@
 - [x] Add detailed service pages to sitemap
 - [x] Push to GitHub
 - [x] Verify on Vercel (auto-deploys from GitHub)
+
+## Columbia & Forest Acres Service+Location Pages
+- [x] Create HVAC Services in Columbia SC page
+- [x] Create Plumbing Services in Columbia SC page
+- [x] Create Electrical Services in Columbia SC page
+- [x] Create HVAC Services in Forest Acres SC page
+- [x] Create Plumbing Services in Forest Acres SC page
+- [x] Create Electrical Services in Forest Acres SC page
+- [x] Add routes to App.tsx
+- [x] Update sitemap.xml
+
+## Internal Linking
+- [x] Add links from Cayce location page to Cayce service pages
+- [x] Add links from Columbia location page to Columbia service pages
+- [x] Add links from Forest Acres location page to Forest Acres service pages
+- [x] Add links from service+location pages back to location pages (already in template)
+- [ ] Push to GitHub
+- [ ] Deploy to Vercel
