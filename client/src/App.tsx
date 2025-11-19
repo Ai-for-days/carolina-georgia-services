@@ -21,6 +21,12 @@ import ElectricalColumbia from "./pages/services/electrical-columbia";
 import HVACForestAcres from "./pages/services/hvac-forest-acres";
 import PlumbingForestAcres from "./pages/services/plumbing-forest-acres";
 import ElectricalForestAcres from "./pages/services/electrical-forest-acres";
+import ArcadiaLakesHVAC from "./pages/services/ArcadiaLakesHVAC";
+import ArcadiaLakesPlumbing from "./pages/services/ArcadiaLakesPlumbing";
+import ArcadiaLakesElectrical from "./pages/services/ArcadiaLakesElectrical";
+import BlythewoodHVAC from "./pages/services/BlythewoodHVAC";
+import BlythewoodPlumbing from "./pages/services/BlythewoodPlumbing";
+import BlythewoodElectrical from "./pages/services/BlythewoodElectrical";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BoydenArbor from "./pages/locations/boyden-arbor";
@@ -84,6 +90,12 @@ function Router() {
       <Route path={"/services/hvac-forest-acres-sc"} component={HVACForestAcres} />
       <Route path={"/services/plumbing-forest-acres-sc"} component={PlumbingForestAcres} />
       <Route path={"/services/electrical-forest-acres-sc"} component={ElectricalForestAcres} />
+      <Route path={"/services/hvac-arcadia-lakes-sc"} component={ArcadiaLakesHVAC} />
+      <Route path={"/services/plumbing-arcadia-lakes-sc"} component={ArcadiaLakesPlumbing} />
+      <Route path={"/services/electrical-arcadia-lakes-sc"} component={ArcadiaLakesElectrical} />
+      <Route path={"/services/hvac-blythewood-sc"} component={BlythewoodHVAC} />
+      <Route path={"/services/plumbing-blythewood-sc"} component={BlythewoodPlumbing} />
+      <Route path={"/services/electrical-blythewood-sc"} component={BlythewoodElectrical} />
       <Route path={"/locations/boyden-arbor"} component={BoydenArbor} />
       <Route path={"/locations/windsor-estates"} component={WindsorEstates} />
       <Route path={"/locations/fairwold-acres"} component={FairwoldAcres} />

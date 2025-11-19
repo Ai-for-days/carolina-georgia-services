@@ -1,10 +1,8 @@
-import LocationPageTemplate from "@/components/LocationPageTemplate";
+import EmergencyLocationTemplate from '@/components/EmergencyLocationTemplate';
+import { locationData } from '@/data/locationData';
 
 export default function ArcadiaLakes() {
   return (
-    <LocationPageTemplate 
-      locationName="Arcadia Lakes"
-      locationType="city"
-    />
+    <EmergencyLocationTemplate location={locationData.arcadiaLakes} />
   );
 }

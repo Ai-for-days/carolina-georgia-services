@@ -907,5 +907,297 @@ export const locationData: Record<string, LocationData> = {
       "Fully stocked trucks ready 24/7",
       "Understand Lake Murray area's unique conditions"
     ]
+  },
+  
+  arcadiaLakes: {
+    name: "Arcadia Lakes",
+    slug: "arcadia-lakes",
+    state: "South Carolina",
+    stateAbbr: "SC",
+    county: "Richland",
+    latitude: 34.0532,
+    longitude: -80.9598,
+    
+    metaTitle: "Emergency HVAC, Plumbing & Electrical Arcadia Lakes SC | 24/7 Service",
+    metaDescription: "Need emergency HVAC, plumbing, or electrical service in Arcadia Lakes, SC? Call (888) 885-7330 for 24/7 rapid response. AC failures, burst pipes, power outages - we fix it fast!",
+    keywords: "emergency HVAC Arcadia Lakes SC, emergency plumber Arcadia Lakes, 24/7 electrician Arcadia Lakes, AC repair Arcadia Lakes, burst pipe Arcadia Lakes, emergency service Arcadia Lakes South Carolina",
+    
+    heroTitle: "Emergency HVAC, Plumbing & Electrical Services in Arcadia Lakes, SC",
+    heroDescription: "AC died in Arcadia Lakes' brutal heat? Pipe burst flooding your lakefront home? Power outage at your property? We're here 24/7 with the fastest emergency response in Arcadia Lakes. Average arrival time: 8-12 minutes.",
+    avgResponseTime: "8-12 minutes",
+    
+    responseTimes: [
+      { area: "Lakefront properties", time: "8-12 minutes" },
+      { area: "Residential neighborhoods", time: "8-12 minutes" },
+      { area: "Two Notch Road area", time: "10-15 minutes" }
+    ],
+    
+    landmarks: [
+      {
+        name: "Arcadia Lakes Town Center",
+        directions: [
+          "From Town Center, head toward Two Notch Road",
+          "We serve all of Arcadia Lakes",
+          "Call for immediate dispatch",
+          "Emergency response available 24/7"
+        ],
+        driveTime: "5-8 minutes"
+      },
+      {
+        name: "Arcadia Lake",
+        directions: [
+          "From the lake, head toward Trenholm Road",
+          "Turn onto Two Notch Road",
+          "We'll come to you anywhere in Arcadia Lakes!",
+          "Call (888) 885-7330 for immediate service"
+        ],
+        driveTime: "6-10 minutes"
+      }
+    ],
+    
+    weatherChallenges: [
+      {
+        season: "Summer",
+        title: "Extreme Heat Emergencies (May-September)",
+        description: "Arcadia Lakes summers regularly hit 95-102°F with oppressive humidity from the lake. Upscale homes with large square footage put enormous strain on HVAC systems.",
+        issues: [
+          "Large homes require powerful AC systems that fail under extreme heat",
+          "Lakefront humidity adds extra moisture load",
+          "Multi-zone systems have more failure points",
+          "High-end equipment still fails in extreme conditions",
+          "Power outages affect lake pumps and HVAC simultaneously"
+        ],
+        solution: "AC emergency? Don't risk heat stroke. Call (888) 885-7330 for same-day AC repair."
+      },
+      {
+        season: "Year-Round",
+        title: "Lakefront Property Challenges",
+        description: "Living on Arcadia Lake is beautiful but creates unique plumbing, electrical, and HVAC challenges. High water tables, humidity, and storm exposure require specialized knowledge.",
+        issues: [
+          "High humidity accelerates system corrosion",
+          "Lightning strikes common near water",
+          "Sump pumps and drainage systems critical",
+          "Electrical systems need surge protection",
+          "Moisture intrusion in crawl spaces and basements"
+        ],
+        solution: "Lakefront emergency? 24/7 emergency line: (888) 885-7330"
+      }
+    ],
+    
+    employers: [
+      {
+        category: "Residential Community",
+        list: [
+          "Primarily residential community",
+          "Upscale single-family homes",
+          "Lakefront properties",
+          "Professional families",
+          "Retirees and executives"
+        ]
+      }
+    ],
+    
+    neighborhoods: [
+      {
+        name: "Lakefront Properties",
+        description: "Upscale homes directly on Arcadia Lake. Beautiful views, unique challenges with humidity and drainage.",
+        responseTime: "8-12 minutes"
+      },
+      {
+        name: "Residential Neighborhoods",
+        description: "Well-maintained homes in quiet, tree-lined streets. Professional families, established community.",
+        responseTime: "8-12 minutes"
+      }
+    ],
+    
+    localDetails: [
+      {
+        title: "Fastest Response in Arcadia Lakes",
+        description: "We know every street in Arcadia Lakes. From lakefront properties to residential neighborhoods, we reach you faster than anyone else. Our average emergency response time in Arcadia Lakes is just 8-12 minutes.",
+        points: [
+          "Lakefront properties: 8-12 minutes",
+          "Residential neighborhoods: 8-12 minutes",
+          "Two Notch Road area: 10-15 minutes"
+        ]
+      },
+      {
+        title: "We Understand Lakefront Property Challenges",
+        description: "Arcadia Lakes' beautiful lakefront location creates unique challenges. We understand what lakefront properties face:",
+        points: [
+          "High humidity from lake proximity",
+          "Lightning strike risks near water",
+          "Sump pump and drainage critical",
+          "Moisture intrusion in crawl spaces",
+          "Large homes with complex multi-zone systems"
+        ]
+      }
+    ],
+    
+    competitiveAdvantages: [
+      "8-12 minute average response time in Arcadia Lakes",
+      "All three trades (HVAC, plumbing, electrical) under one roof",
+      "No overtime charges for nights/weekends/holidays",
+      "Upfront pricing before work begins",
+      "Experts in lakefront property challenges",
+      "Fully stocked trucks ready 24/7",
+      "Understand high-end home systems"
+    ]
+  },
+  
+  blythewood: {
+    name: "Blythewood",
+    slug: "blythewood",
+    state: "South Carolina",
+    stateAbbr: "SC",
+    county: "Richland/Fairfield",
+    latitude: 34.2143,
+    longitude: -80.9743,
+    
+    metaTitle: "Emergency HVAC, Plumbing & Electrical Blythewood SC | 24/7 Service",
+    metaDescription: "Need emergency HVAC, plumbing, or electrical service in Blythewood, SC? Call (888) 885-7330 for 24/7 rapid response. AC failures, burst pipes, power outages - we fix it fast!",
+    keywords: "emergency HVAC Blythewood SC, emergency plumber Blythewood, 24/7 electrician Blythewood, AC repair Blythewood, burst pipe Blythewood, emergency service Blythewood South Carolina",
+    
+    heroTitle: "Emergency HVAC, Plumbing & Electrical Services in Blythewood, SC",
+    heroDescription: "AC died in Blythewood's brutal heat? Pipe burst flooding your new home? Power outage at your property? We're here 24/7 with the fastest emergency response in Blythewood. Average arrival time: 15-20 minutes.",
+    avgResponseTime: "15-20 minutes",
+    
+    responseTimes: [
+      { area: "Downtown Blythewood", time: "15-20 minutes" },
+      { area: "New subdivisions", time: "18-25 minutes" },
+      { area: "I-77 corridor", time: "15-20 minutes" },
+      { area: "Rural areas", time: "20-30 minutes" }
+    ],
+    
+    landmarks: [
+      {
+        name: "Blythewood Town Center",
+        directions: [
+          "From Town Center, head toward Main Street",
+          "Continue to I-77",
+          "We serve all of Blythewood",
+          "Emergency response available 24/7"
+        ],
+        driveTime: "10-15 minutes"
+      },
+      {
+        name: "I-77 / Blythewood Exit",
+        directions: [
+          "Take I-77 to Blythewood Road exit",
+          "Head into Blythewood",
+          "We'll come to you anywhere in Blythewood!",
+          "Call (888) 885-7330 for immediate dispatch"
+        ],
+        driveTime: "12-18 minutes"
+      },
+      {
+        name: "Doko Meadows Park",
+        directions: [
+          "From Doko Meadows, head toward Blythewood Road",
+          "Turn onto Main Street",
+          "We serve the entire Blythewood area",
+          "Average response: 15-20 minutes"
+        ],
+        driveTime: "10-15 minutes"
+      }
+    ],
+    
+    weatherChallenges: [
+      {
+        season: "Summer",
+        title: "Extreme Heat Emergencies (May-September)",
+        description: "Blythewood summers regularly hit 95-102°F with crushing humidity. Many new homes have builder-grade HVAC that struggles under extreme heat. Rural areas face longer power outage recovery times.",
+        issues: [
+          "Builder-grade AC units undersized for extreme heat",
+          "New construction often has minimal HVAC systems",
+          "Rural areas experience longer power outage durations",
+          "Well pumps fail during power outages",
+          "Large lot sizes mean more exposure to sun"
+        ],
+        solution: "AC emergency? Don't risk heat stroke. Call (888) 885-7330 for same-day AC repair."
+      },
+      {
+        season: "Year-Round",
+        title: "Rural & New Construction Challenges",
+        description: "Blythewood's mix of new subdivisions and rural properties creates unique challenges. New homes may have warranty issues, while rural properties face well water and septic challenges.",
+        issues: [
+          "New construction warranty issues and defects",
+          "Well pumps and water treatment systems",
+          "Septic system electrical and pump failures",
+          "Rural areas have longer emergency response times",
+          "Builder-grade systems often need early replacement"
+        ],
+        solution: "Emergency in Blythewood? 24/7 emergency line: (888) 885-7330"
+      }
+    ],
+    
+    employers: [
+      {
+        category: "Residential & Commercial",
+        list: [
+          "Growing residential community",
+          "New home construction",
+          "Small businesses and retail",
+          "Professional families commuting to Columbia",
+          "Agricultural and rural properties"
+        ]
+      }
+    ],
+    
+    neighborhoods: [
+      {
+        name: "Downtown Blythewood",
+        description: "Historic downtown area with mix of older homes and businesses. Established community with charm and character.",
+        responseTime: "15-20 minutes"
+      },
+      {
+        name: "New Subdivisions",
+        description: "Rapidly growing area with new construction. Young families, modern homes, but often builder-grade systems.",
+        responseTime: "18-25 minutes"
+      },
+      {
+        name: "I-77 Corridor",
+        description: "Commercial and residential development along I-77. Convenient access, mix of properties.",
+        responseTime: "15-20 minutes"
+      },
+      {
+        name: "Rural Areas",
+        description: "Large lots, well water, septic systems. Beautiful countryside but unique infrastructure challenges.",
+        responseTime: "20-30 minutes"
+      }
+    ],
+    
+    localDetails: [
+      {
+        title: "Fastest Response in Blythewood",
+        description: "We know every street in Blythewood. From downtown to new subdivisions to rural areas, we reach you as fast as possible. Our average emergency response time in Blythewood is 15-20 minutes.",
+        points: [
+          "Downtown Blythewood: 15-20 minutes",
+          "New subdivisions: 18-25 minutes",
+          "I-77 corridor: 15-20 minutes",
+          "Rural areas: 20-30 minutes"
+        ]
+      },
+      {
+        title: "We Understand Blythewood's Unique Challenges",
+        description: "Blythewood's mix of new construction and rural properties creates unique challenges. We understand what Blythewood properties face:",
+        points: [
+          "New construction: Builder-grade systems often undersized",
+          "Well water systems: Pumps and treatment equipment",
+          "Septic systems: Electrical and pump failures",
+          "Rural areas: Longer power outage recovery times",
+          "Large lots: More exposure to weather extremes"
+        ]
+      }
+    ],
+    
+    competitiveAdvantages: [
+      "15-20 minute average response time in Blythewood",
+      "All three trades (HVAC, plumbing, electrical) under one roof",
+      "No overtime charges for nights/weekends/holidays",
+      "Upfront pricing before work begins",
+      "Experts in new construction and rural property challenges",
+      "Fully stocked trucks ready 24/7",
+      "Understand well water and septic systems"
+    ]
   }
 };
