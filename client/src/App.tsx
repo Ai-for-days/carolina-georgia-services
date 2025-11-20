@@ -27,6 +27,12 @@ import ArcadiaLakesElectrical from "./pages/services/ArcadiaLakesElectrical";
 import BlythewoodHVAC from "./pages/services/BlythewoodHVAC";
 import BlythewoodPlumbing from "./pages/services/BlythewoodPlumbing";
 import BlythewoodElectrical from "./pages/services/BlythewoodElectrical";
+import EastoverHVAC from "./pages/services/EastoverHVAC";
+import EastoverPlumbing from "./pages/services/EastoverPlumbing";
+import EastoverElectrical from "./pages/services/EastoverElectrical";
+import ElginHVAC from "./pages/services/ElginHVAC";
+import ElginPlumbing from "./pages/services/ElginPlumbing";
+import ElginElectrical from "./pages/services/ElginElectrical";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BoydenArbor from "./pages/locations/boyden-arbor";
@@ -96,6 +102,12 @@ function Router() {
       <Route path={"/services/hvac-blythewood-sc"} component={BlythewoodHVAC} />
       <Route path={"/services/plumbing-blythewood-sc"} component={BlythewoodPlumbing} />
       <Route path={"/services/electrical-blythewood-sc"} component={BlythewoodElectrical} />
+      <Route path={"/services/hvac-eastover-sc"} component={EastoverHVAC} />
+      <Route path={"/services/plumbing-eastover-sc"} component={EastoverPlumbing} />
+      <Route path={"/services/electrical-eastover-sc"} component={EastoverElectrical} />
+      <Route path={"/services/hvac-elgin-sc"} component={ElginHVAC} />
+      <Route path={"/services/plumbing-elgin-sc"} component={ElginPlumbing} />
+      <Route path={"/services/electrical-elgin-sc"} component={ElginElectrical} />
       <Route path={"/locations/boyden-arbor"} component={BoydenArbor} />
       <Route path={"/locations/windsor-estates"} component={WindsorEstates} />
       <Route path={"/locations/fairwold-acres"} component={FairwoldAcres} />

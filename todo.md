@@ -275,3 +275,22 @@
 - [x] Add links from service+location pages back to location pages (already in template)
 - [x] Push to GitHub
 - [x] Deploy to Vercel (auto-deploys from GitHub)
+
+## New Requirements - November 19, 2025
+
+- [x] Add gas services to plumbing service offerings
+- [x] Update color scheme: Primary #FB4F14 (orange) and #002244 (dark blue), Secondary #f1f1f1, #ffffff, #000000
+- [x] Fix centering issues - ensure all content is centered, not pushed to left
+- [x] Create location data for Eastover, SC
+- [x] Create location data for Elgin, SC
+- [x] Create HVAC service+location page for Eastover
+- [x] Create Plumbing service+location page for Eastover
+- [x] Create Electrical service+location page for Eastover
+- [x] Create HVAC service+location page for Elgin
+- [x] Create Plumbing service+location page for Elgin
+- [x] Create Electrical service+location page for Elgin
+- [x] Add routes for 6 new Eastover/Elgin pages to App.tsx
+- [x] Update sitemap.xml with 6 new pages
+- [x] Update Eastover and Elgin location pages to use EmergencyLocationTemplate
+- [ ] Push all changes to GitHub
+- [ ] Verify Vercel deployment

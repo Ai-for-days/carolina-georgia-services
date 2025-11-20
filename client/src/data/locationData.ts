@@ -1199,5 +1199,294 @@ export const locationData: Record<string, LocationData> = {
       "Fully stocked trucks ready 24/7",
       "Understand well water and septic systems"
     ]
+  },
+  
+  eastover: {
+    name: "Eastover",
+    slug: "eastover",
+    state: "South Carolina",
+    stateAbbr: "SC",
+    county: "Richland",
+    latitude: 33.8763,
+    longitude: -80.6826,
+    
+    metaTitle: "Emergency HVAC, Plumbing & Electrical Eastover SC | 24/7 Service",
+    metaDescription: "Need emergency HVAC, plumbing, or electrical service in Eastover, SC? Call (888) 885-7330 for 24/7 rapid response. AC failures, burst pipes, power outages - we fix it fast!",
+    keywords: "emergency HVAC Eastover SC, emergency plumber Eastover, 24/7 electrician Eastover, AC repair Eastover, burst pipe Eastover, emergency service Eastover South Carolina",
+    
+    heroTitle: "Emergency HVAC, Plumbing & Electrical Services in Eastover, SC",
+    heroDescription: "AC died in Eastover's brutal heat? Pipe burst flooding your home? Power outage at your property? We're here 24/7 with the fastest emergency response in Eastover. Average arrival time: 20-25 minutes.",
+    avgResponseTime: "20-25 minutes",
+    
+    responseTimes: [
+      { area: "Downtown Eastover", time: "20-25 minutes" },
+      { area: "Residential areas", time: "20-30 minutes" },
+      { area: "Rural properties", time: "25-35 minutes" },
+      { area: "Fort Jackson area", time: "18-25 minutes" }
+    ],
+    
+    landmarks: [
+      {
+        name: "Eastover Town Center",
+        directions: [
+          "From Town Center, head toward Highway 378",
+          "We serve all of Eastover",
+          "Call for immediate dispatch",
+          "Emergency response available 24/7"
+        ],
+        driveTime: "15-20 minutes"
+      },
+      {
+        name: "Fort Jackson Gate (nearby)",
+        directions: [
+          "From Fort Jackson, take Highway 378 toward Eastover",
+          "Continue into Eastover",
+          "We'll come to you anywhere in Eastover!",
+          "Call (888) 885-7330 for immediate service"
+        ],
+        driveTime: "12-18 minutes"
+      }
+    ],
+    
+    weatherChallenges: [
+      {
+        season: "Summer",
+        title: "Extreme Heat Emergencies (May-September)",
+        description: "Eastover summers regularly hit 95-102°F with oppressive humidity. Many homes have older HVAC systems that struggle under extreme heat. Rural areas face longer power outage recovery times.",
+        issues: [
+          "Older HVAC systems fail under extreme heat load",
+          "Rural areas experience longer power outage durations",
+          "Well pumps fail during power outages",
+          "Limited AC capacity in older homes",
+          "High humidity accelerates system wear"
+        ],
+        solution: "AC emergency? Don't risk heat stroke. Call (888) 885-7330 for same-day AC repair."
+      },
+      {
+        season: "Year-Round",
+        title: "Rural Property Challenges",
+        description: "Eastover's mix of residential and rural properties creates unique challenges. Well water systems, septic systems, and aging infrastructure require specialized expertise.",
+        issues: [
+          "Well pumps and water treatment systems",
+          "Septic system electrical and pump failures",
+          "Aging homes with outdated systems",
+          "Rural areas have longer emergency response times",
+          "Limited municipal services in rural areas"
+        ],
+        solution: "Emergency in Eastover? 24/7 emergency line: (888) 885-7330"
+      }
+    ],
+    
+    employers: [
+      {
+        category: "Residential & Rural",
+        list: [
+          "Primarily residential community",
+          "Small businesses and local services",
+          "Agricultural properties",
+          "Families commuting to Columbia and Fort Jackson",
+          "Retirees and established residents"
+        ]
+      }
+    ],
+    
+    neighborhoods: [
+      {
+        name: "Downtown Eastover",
+        description: "Small-town downtown area with local businesses and services. Established community with mix of older and newer homes.",
+        responseTime: "20-25 minutes"
+      },
+      {
+        name: "Residential Areas",
+        description: "Quiet residential neighborhoods with single-family homes. Mix of ages and styles, family-friendly community.",
+        responseTime: "20-30 minutes"
+      },
+      {
+        name: "Rural Properties",
+        description: "Large lots, well water, septic systems. Beautiful countryside but unique infrastructure challenges.",
+        responseTime: "25-35 minutes"
+      }
+    ],
+    
+    localDetails: [
+      {
+        title: "Fastest Response in Eastover",
+        description: "We know every street in Eastover. From downtown to residential areas to rural properties, we reach you as fast as possible. Our average emergency response time in Eastover is 20-25 minutes.",
+        points: [
+          "Downtown Eastover: 20-25 minutes",
+          "Residential areas: 20-30 minutes",
+          "Rural properties: 25-35 minutes",
+          "Fort Jackson area: 18-25 minutes"
+        ]
+      },
+      {
+        title: "We Understand Eastover's Unique Challenges",
+        description: "Eastover's rural character and proximity to Fort Jackson create unique challenges. We understand what Eastover properties face:",
+        points: [
+          "Well water systems: Pumps and treatment equipment",
+          "Septic systems: Electrical and pump failures",
+          "Aging infrastructure: Older homes need expert care",
+          "Rural areas: Longer power outage recovery times",
+          "Limited municipal services: Self-sufficient systems"
+        ]
+      }
+    ],
+    
+    competitiveAdvantages: [
+      "20-25 minute average response time in Eastover",
+      "All three trades (HVAC, plumbing, electrical) under one roof",
+      "No overtime charges for nights/weekends/holidays",
+      "Upfront pricing before work begins",
+      "Experts in rural property challenges",
+      "Fully stocked trucks ready 24/7",
+      "Understand well water and septic systems"
+    ]
+  },
+  
+  elgin: {
+    name: "Elgin",
+    slug: "elgin",
+    state: "South Carolina",
+    stateAbbr: "SC",
+    county: "Richland/Kershaw",
+    latitude: 34.1732,
+    longitude: -80.7937,
+    
+    metaTitle: "Emergency HVAC, Plumbing & Electrical Elgin SC | 24/7 Service",
+    metaDescription: "Need emergency HVAC, plumbing, or electrical service in Elgin, SC? Call (888) 885-7330 for 24/7 rapid response. AC failures, burst pipes, power outages - we fix it fast!",
+    keywords: "emergency HVAC Elgin SC, emergency plumber Elgin, 24/7 electrician Elgin, AC repair Elgin, burst pipe Elgin, emergency service Elgin South Carolina",
+    
+    heroTitle: "Emergency HVAC, Plumbing & Electrical Services in Elgin, SC",
+    heroDescription: "AC died in Elgin's brutal heat? Pipe burst flooding your home? Power outage at your property? We're here 24/7 with the fastest emergency response in Elgin. Average arrival time: 20-30 minutes.",
+    avgResponseTime: "20-30 minutes",
+    
+    responseTimes: [
+      { area: "Downtown Elgin", time: "20-25 minutes" },
+      { area: "Residential neighborhoods", time: "20-30 minutes" },
+      { area: "I-20 corridor", time: "18-25 minutes" },
+      { area: "Rural areas", time: "25-35 minutes" }
+    ],
+    
+    landmarks: [
+      {
+        name: "Elgin Town Center",
+        directions: [
+          "From Town Center, head toward Main Street",
+          "We serve all of Elgin",
+          "Call for immediate dispatch",
+          "Emergency response available 24/7"
+        ],
+        driveTime: "15-20 minutes"
+      },
+      {
+        name: "I-20 / Elgin Exit",
+        directions: [
+          "Take I-20 to Elgin exit",
+          "Head into Elgin",
+          "We'll come to you anywhere in Elgin!",
+          "Call (888) 885-7330 for immediate dispatch"
+        ],
+        driveTime: "12-18 minutes"
+      }
+    ],
+    
+    weatherChallenges: [
+      {
+        season: "Summer",
+        title: "Extreme Heat Emergencies (May-September)",
+        description: "Elgin summers regularly hit 95-102°F with crushing humidity. Mix of older and newer homes means varied HVAC system ages. Rural areas face longer power outage recovery times.",
+        issues: [
+          "Aging HVAC systems in older homes",
+          "New construction may have builder-grade systems",
+          "Rural areas experience longer power outage durations",
+          "Well pumps fail during power outages",
+          "High humidity accelerates corrosion"
+        ],
+        solution: "AC emergency? Don't risk heat stroke. Call (888) 885-7330 for same-day AC repair."
+      },
+      {
+        season: "Year-Round",
+        title: "Mixed Property Challenges",
+        description: "Elgin's mix of established neighborhoods and rural properties creates diverse challenges. Well water, septic systems, and aging infrastructure require specialized knowledge.",
+        issues: [
+          "Well pumps and water treatment systems",
+          "Septic system electrical and pump failures",
+          "Mix of old and new infrastructure",
+          "Rural areas have longer emergency response times",
+          "Varied system ages require broad expertise"
+        ],
+        solution: "Emergency in Elgin? 24/7 emergency line: (888) 885-7330"
+      }
+    ],
+    
+    employers: [
+      {
+        category: "Residential & Commercial",
+        list: [
+          "Growing residential community",
+          "Small businesses and retail",
+          "Agricultural properties",
+          "Families commuting to Columbia",
+          "Established and new residents"
+        ]
+      }
+    ],
+    
+    neighborhoods: [
+      {
+        name: "Downtown Elgin",
+        description: "Historic downtown area with local businesses and charm. Mix of older homes and commercial properties.",
+        responseTime: "20-25 minutes"
+      },
+      {
+        name: "Residential Neighborhoods",
+        description: "Established neighborhoods with single-family homes. Family-friendly community with good schools.",
+        responseTime: "20-30 minutes"
+      },
+      {
+        name: "I-20 Corridor",
+        description: "Commercial and residential development along I-20. Convenient access, mix of properties.",
+        responseTime: "18-25 minutes"
+      },
+      {
+        name: "Rural Areas",
+        description: "Large lots, well water, septic systems. Beautiful countryside but unique infrastructure challenges.",
+        responseTime: "25-35 minutes"
+      }
+    ],
+    
+    localDetails: [
+      {
+        title: "Fastest Response in Elgin",
+        description: "We know every street in Elgin. From downtown to residential neighborhoods to rural areas, we reach you as fast as possible. Our average emergency response time in Elgin is 20-30 minutes.",
+        points: [
+          "Downtown Elgin: 20-25 minutes",
+          "Residential neighborhoods: 20-30 minutes",
+          "I-20 corridor: 18-25 minutes",
+          "Rural areas: 25-35 minutes"
+        ]
+      },
+      {
+        title: "We Understand Elgin's Unique Challenges",
+        description: "Elgin's mix of established neighborhoods and rural properties creates unique challenges. We understand what Elgin properties face:",
+        points: [
+          "Well water systems: Pumps and treatment equipment",
+          "Septic systems: Electrical and pump failures",
+          "Mixed infrastructure: Old and new systems",
+          "Rural areas: Longer power outage recovery times",
+          "Varied system ages: Broad expertise required"
+        ]
+      }
+    ],
+    
+    competitiveAdvantages: [
+      "20-30 minute average response time in Elgin",
+      "All three trades (HVAC, plumbing, electrical) under one roof",
+      "No overtime charges for nights/weekends/holidays",
+      "Upfront pricing before work begins",
+      "Experts in mixed property challenges",
+      "Fully stocked trucks ready 24/7",
+      "Understand well water and septic systems"
+    ]
   }
 };

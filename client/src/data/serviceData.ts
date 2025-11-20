@@ -267,6 +267,19 @@ export const serviceData: Record<string, ServiceData> = {
           "Water line repair",
           "Re-piping services"
         ]
+      },
+      {
+        title: "Gas Services",
+        description: "Safe, professional gas line services for your {city} property",
+        items: [
+          "Gas leak detection and repair",
+          "Gas line installation",
+          "Gas line repair and replacement",
+          "Gas appliance hookup",
+          "Gas pressure testing",
+          "Emergency gas leak response 24/7",
+          "Gas line inspections"
+        ]
       }
     ],
     commonProblems: [
