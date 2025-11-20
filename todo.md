@@ -292,5 +292,5 @@
 - [x] Add routes for 6 new Eastover/Elgin pages to App.tsx
 - [x] Update sitemap.xml with 6 new pages
 - [x] Update Eastover and Elgin location pages to use EmergencyLocationTemplate
-- [ ] Push all changes to GitHub
-- [ ] Verify Vercel deployment
+- [x] Push all changes to GitHub
+- [x] Verify Vercel deployment
