@@ -294,3 +294,16 @@
 - [x] Update Eastover and Elgin location pages to use EmergencyLocationTemplate
 - [x] Push all changes to GitHub
 - [x] Verify Vercel deployment
+
+## Comprehensive Plumbing Service Update - November 2025
+
+- [x] Update plumbing service data with complete service offerings
+- [x] Add Rinnai tankless water heater specialization
+- [x] Add gas logs installation and service
+- [x] Add commercial plumbing capabilities
+- [x] Add new construction and remodel services
+- [x] Update water line services section
+- [x] Update drain services with video inspection
+- [x] Update fixture repairs and replacements
+- [x] Verify all service+location pages reflect updated content
+- [ ] Push to GitHub and deploy to Vercel

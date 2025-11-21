@@ -230,55 +230,94 @@ export const serviceData: Record<string, ServiceData> = {
         ]
       },
       {
-        title: "Drain & Sewer Services",
-        description: "Clear stubborn clogs and restore proper drainage",
+        title: "Drain Services",
+        description: "Clear out tough clogs and slow drains",
         items: [
           "Drain cleaning and unclogging",
-          "Sewer line inspection (camera)",
-          "Hydro-jetting services",
-          "Sewer line repair and replacement",
-          "Root removal",
-          "Preventive maintenance",
-          "Grease trap cleaning"
+          "Video inspection tools to locate problem areas",
+          "Hydro-jetting for stubborn clogs",
+          "Sewer line inspection and repair",
+          "Damaged drain line repair or replacement",
+          "Root removal from sewer lines",
+          "Preventive maintenance programs"
         ]
       },
       {
         title: "Water Heater Services",
-        description: "Installation, repair, and replacement",
+        description: "Fix or replace standard water heaters, install and service Rinnai tankless systems",
         items: [
-          "Water heater repair",
-          "Tank water heater installation",
-          "Tankless water heater installation",
-          "Water heater maintenance",
+          "Standard water heater repair and replacement",
+          "Rinnai tankless water heater installation",
+          "Rinnai tankless system service and maintenance",
+          "Endless hot water with tankless systems",
+          "Energy-efficient water heating solutions",
           "Emergency water heater replacement",
-          "Energy-efficient upgrades",
           "Same-day installation available"
         ]
       },
       {
-        title: "Plumbing Repairs & Installation",
-        description: "Complete plumbing solutions for your {city} property",
+        title: "Water Line Services",
+        description: "Quick repair or replacement of broken water lines",
         items: [
-          "Leak detection and repair",
-          "Pipe repair and replacement",
-          "Fixture installation (faucets, toilets, sinks)",
-          "Garbage disposal repair/installation",
-          "Sump pump installation",
-          "Water line repair",
-          "Re-piping services"
+          "Water line leak detection",
+          "Emergency water line repair",
+          "Water line replacement",
+          "Main water line installation",
+          "Water pressure testing",
+          "Pipe material upgrades",
+          "24/7 emergency water line service"
         ]
       },
       {
-        title: "Gas Services",
-        description: "Safe, professional gas line services for your {city} property",
+        title: "Fixture Repairs & Replacements",
+        description: "Repair or replace toilets, faucets, and garbage disposals",
+        items: [
+          "Toilet repair and replacement",
+          "Faucet installation and repair",
+          "Garbage disposal repair and installation",
+          "Sink installation and repair",
+          "Shower and tub fixtures",
+          "Leak detection and repair",
+          "Fixture upgrades and modernization"
+        ]
+      },
+      {
+        title: "Gas Line & Appliance Services",
+        description: "Safe gas line repairs, install and service gas logs",
         items: [
           "Gas leak detection and repair",
-          "Gas line installation",
-          "Gas line repair and replacement",
-          "Gas appliance hookup",
-          "Gas pressure testing",
+          "Gas line installation and replacement",
+          "Gas log installation and service",
+          "Gas appliance hookup and connection",
+          "Gas pressure testing and inspection",
           "Emergency gas leak response 24/7",
-          "Gas line inspections"
+          "Gas fireplace and log maintenance"
+        ]
+      },
+      {
+        title: "New Construction & Remodels",
+        description: "Complete plumbing installs for homes and commercial spaces",
+        items: [
+          "New home plumbing installation",
+          "Commercial plumbing systems",
+          "Bathroom and kitchen remodels",
+          "Fixture and appliance installation",
+          "Rough-in plumbing for new construction",
+          "Plumbing design consultation",
+          "Code-compliant installations"
+        ]
+      },
+      {
+        title: "Residential & Commercial Plumbing",
+        description: "Whether you're dealing with a small issue at home or a large-scale project at work, we do it all",
+        items: [
+          "Residential plumbing services",
+          "Commercial plumbing solutions",
+          "Multi-unit property plumbing",
+          "Restaurant and retail plumbing",
+          "Office building plumbing",
+          "Emergency service for all property types",
+          "Preventive maintenance programs"
         ]
       }
     ],
