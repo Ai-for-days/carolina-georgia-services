@@ -244,11 +244,11 @@ export const serviceData: Record<string, ServiceData> = {
       },
       {
         title: "Water Heater Services",
-        description: "Fix or replace standard water heaters, install and service Rinnai tankless systems",
+        description: "Fix or replace standard water heaters, install and service tankless systems",
         items: [
           "Standard water heater repair and replacement",
-          "Rinnai tankless water heater installation",
-          "Rinnai tankless system service and maintenance",
+          "Tankless water heater installation",
+          "Tankless system service and maintenance",
           "Endless hot water with tankless systems",
           "Energy-efficient water heating solutions",
           "Emergency water heater replacement",

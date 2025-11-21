@@ -307,3 +307,9 @@
 - [x] Update fixture repairs and replacements
 - [x] Verify all service+location pages reflect updated content
 - [x] Push to GitHub and deploy to Vercel
+
+## Remove Brand References - November 2025
+
+- [x] Remove Rinnai brand references from water heater services
+- [x] Make tankless water heater services generic (no brand mention)
+- [ ] Push to GitHub and deploy to Vercel
