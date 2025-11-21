@@ -318,4 +318,4 @@
 
 - [x] Add Waterdrop Filter product installation to plumbing services
 - [x] Create new service category for water filtration systems
-- [ ] Push to GitHub and deploy to Vercel
+- [x] Push to GitHub and deploy to Vercel
