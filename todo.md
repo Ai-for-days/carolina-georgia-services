@@ -319,3 +319,8 @@
 - [x] Add Waterdrop Filter product installation to plumbing services
 - [x] Create new service category for water filtration systems
 - [x] Push to GitHub and deploy to Vercel
+
+## Update Sitemap - November 2025
+
+- [x] Update sitemap.xml lastmod dates for all plumbing service pages
+- [ ] Push to GitHub and deploy to Vercel
