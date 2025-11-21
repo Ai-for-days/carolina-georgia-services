@@ -312,4 +312,4 @@
 
 - [x] Remove Rinnai brand references from water heater services
 - [x] Make tankless water heater services generic (no brand mention)
-- [ ] Push to GitHub and deploy to Vercel
+- [x] Push to GitHub and deploy to Vercel
