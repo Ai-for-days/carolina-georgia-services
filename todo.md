@@ -313,3 +313,9 @@
 - [x] Remove Rinnai brand references from water heater services
 - [x] Make tankless water heater services generic (no brand mention)
 - [x] Push to GitHub and deploy to Vercel
+
+## Add Waterdrop Filter Services - November 2025
+
+- [x] Add Waterdrop Filter product installation to plumbing services
+- [x] Create new service category for water filtration systems
+- [ ] Push to GitHub and deploy to Vercel

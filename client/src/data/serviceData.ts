@@ -269,6 +269,19 @@ export const serviceData: Record<string, ServiceData> = {
         ]
       },
       {
+        title: "Water Filtration Systems",
+        description: "Install and service Waterdrop Filter products for clean, safe water",
+        items: [
+          "Waterdrop Filter installation",
+          "Whole-house water filtration systems",
+          "Under-sink water filters",
+          "Reverse osmosis systems",
+          "Filter replacement and maintenance",
+          "Water quality testing",
+          "Filter system upgrades"
+        ]
+      },
+      {
         title: "Fixture Repairs & Replacements",
         description: "Repair or replace toilets, faucets, and garbage disposals",
         items: [
