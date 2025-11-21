@@ -605,4 +605,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <!-- Comparison Pages -->
+  <url>
+    <loc>https://carolina-georgia-services.vercel.app/comparisons/tankless-vs-traditional</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://carolina-georgia-services.vercel.app/comparisons/water-filtration-systems</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
 </urlset>

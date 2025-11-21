@@ -46,12 +46,11 @@ import ElectricalForestAcres1000 from "./pages/services/electrical-forest-acres-
 import HVACArcadiaLakes1000 from "./pages/services/hvac-arcadia-lakes-1000";
 import PlumbingArcadiaLakes1000 from "./pages/services/plumbing-arcadia-lakes-1000";
 import ElectricalArcadiaLakes1000 from "./pages/services/electrical-arcadia-lakes-1000";
-      <Route path={"/services/hvac-blythewood-1000"} component={HVACBlythewood1000} />
-      <Route path={"/services/plumbing-blythewood-1000"} component={PlumbingBlythewood1000} />
-      <Route path={"/services/electrical-blythewood-1000"} component={ElectricalBlythewood1000} />
 import HVACBlythewood1000 from "./pages/services/hvac-blythewood-1000";
 import PlumbingBlythewood1000 from "./pages/services/plumbing-blythewood-1000";
 import ElectricalBlythewood1000 from "./pages/services/electrical-blythewood-1000";
+import TanklessVsTraditional from "./pages/comparisons/TanklessVsTraditional";
+import FiltrationSystems from "./pages/comparisons/FiltrationSystems";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BoydenArbor from "./pages/locations/boyden-arbor";
@@ -122,6 +121,9 @@ function Router() {
       <Route path={"/services/hvac-blythewood-1000"} component={HVACBlythewood1000} />
       <Route path={"/services/plumbing-blythewood-1000"} component={PlumbingBlythewood1000} />
       <Route path={"/services/electrical-blythewood-1000"} component={ElectricalBlythewood1000} />
+      {/* Comparison Pages */}
+      <Route path={"/comparisons/tankless-vs-traditional"} component={TanklessVsTraditional} />
+      <Route path={"/comparisons/water-filtration-systems"} component={FiltrationSystems} />
       <Route path={"/services/hvac-cayce-sc"} component={HVACCayce} />
       <Route path={"/services/plumbing-cayce-sc"} component={PlumbingCayce} />
       <Route path={"/services/electrical-cayce-sc"} component={ElectricalCayce} />
