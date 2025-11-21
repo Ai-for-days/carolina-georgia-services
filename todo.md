@@ -306,4 +306,4 @@
 - [x] Update drain services with video inspection
 - [x] Update fixture repairs and replacements
 - [x] Verify all service+location pages reflect updated content
-- [ ] Push to GitHub and deploy to Vercel
+- [x] Push to GitHub and deploy to Vercel
