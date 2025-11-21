@@ -323,4 +323,4 @@
 ## Update Sitemap - November 2025
 
 - [x] Update sitemap.xml lastmod dates for all plumbing service pages
-- [ ] Push to GitHub and deploy to Vercel
+- [x] Push to GitHub and deploy to Vercel
