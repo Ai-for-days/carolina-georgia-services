@@ -208,6 +208,28 @@
   
   <url>
     <loc>https://carolina-georgia-services.vercel.app/services/electrical-arcadia-lakes-1000</loc>
+  
+  <!-- Comprehensive 1000-Word Location Pages - Blythewood -->
+  <url>
+    <loc>https://carolina-georgia-services.vercel.app/services/hvac-blythewood-1000</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://carolina-georgia-services.vercel.app/services/plumbing-blythewood-1000</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://carolina-georgia-services.vercel.app/services/electrical-blythewood-1000</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
     <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>

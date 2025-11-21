@@ -361,3 +361,26 @@
 ### Deployment
 - [ ] Push all changes to GitHub
 - [ ] Verify Vercel deployment to correct account
+
+## New Requirements - November 20, 2025
+
+### FAQ Schema Markup
+- [ ] Add FAQ schema markup to HVAC Services page
+- [ ] Add FAQ schema markup to Plumbing Services page
+- [ ] Add FAQ schema markup to Electrical Services page
+
+### Service Comparison Pages
+- [ ] Create "Tankless vs Traditional Water Heaters" comparison page
+- [ ] Create "Whole-House vs Under-Sink Filtration" comparison page
+- [ ] Add routes for comparison pages
+
+### Blythewood Comprehensive Location Pages
+- [ ] Create 1000-word HVAC page for Blythewood, SC
+- [ ] Create 1000-word Plumbing page for Blythewood, SC
+- [ ] Create 1000-word Electrical page for Blythewood, SC
+- [ ] Add routes for Blythewood 1000-word pages
+
+### Sitemap & Deployment
+- [ ] Update sitemap.xml with all new pages
+- [ ] Push to GitHub
+- [ ] Deploy to Vercel
