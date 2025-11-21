@@ -4,7 +4,7 @@ import { Phone, Clock, CheckCircle, AlertCircle, ArrowRight, Wind, Droplet, Zap 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SEO from "@/components/SEO";
-import Header from "@/components/Header";
+
 import Footer from "@/components/Footer";
 import { ServiceData } from "@/data/serviceData";
 import { LocationData } from "@/data/locationData";
@@ -80,7 +80,6 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
         }}
       />
       <div className="min-h-screen flex flex-col">
-        <Header />
         
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-red-600 to-orange-600 text-white py-12">

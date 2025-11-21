@@ -324,3 +324,35 @@
 
 - [x] Update sitemap.xml lastmod dates for all plumbing service pages
 - [x] Push to GitHub and deploy to Vercel
+
+## Major Updates - November 2025
+
+### GitHub Deployment Fix
+- [x] Investigate why deploying to derek-5703 instead of Ai-for-days
+- [x] Fix GitHub repository configuration to deploy to correct Vercel account (User needs to reconnect Vercel to Ai-for-days repo in Vercel dashboard)
+
+### Header Fixes
+- [x] Remove duplicate header (keep only static header)
+- [x] Change "App" to "Carolina Georgia Services" in static header
+
+### SEO Enhancements
+- [ ] Add FAQ schema markup to all service pages
+- [ ] Create service comparison pages (tankless vs traditional water heaters, filtration systems)
+
+### Comprehensive Location Pages
+- [ ] Create 1000-word HVAC page for Columbia, SC
+- [ ] Create 1000-word Plumbing page for Columbia, SC
+- [ ] Create 1000-word Electrical page for Columbia, SC
+- [ ] Create 1000-word HVAC page for Cayce, SC
+- [ ] Create 1000-word Plumbing page for Cayce, SC
+- [ ] Create 1000-word Electrical page for Cayce, SC
+- [ ] Create 1000-word HVAC page for Forest Acres, SC
+- [ ] Create 1000-word Plumbing page for Forest Acres, SC
+- [ ] Create 1000-word Electrical page for Forest Acres, SC
+- [ ] Create 1000-word HVAC page for Arcadia Lakes, SC
+- [ ] Create 1000-word Plumbing page for Arcadia Lakes, SC
+- [ ] Create 1000-word Electrical page for Arcadia Lakes, SC
+
+### Deployment
+- [ ] Push all changes to GitHub
+- [ ] Verify Vercel deployment to correct account
