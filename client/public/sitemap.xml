@@ -191,6 +191,28 @@
     <priority>0.7</priority>
   </url>
   
+  <!-- Comprehensive 1000-Word Location Pages - Arcadia Lakes -->
+  <url>
+    <loc>https://carolina-georgia-services.vercel.app/services/hvac-arcadia-lakes-1000</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://carolina-georgia-services.vercel.app/services/plumbing-arcadia-lakes-1000</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://carolina-georgia-services.vercel.app/services/electrical-arcadia-lakes-1000</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
   <!-- Service+Location Pages - Arcadia Lakes -->
   <url>
     <loc>https://carolina-georgia-services.vercel.app/services/hvac-arcadia-lakes-sc</loc>

@@ -33,6 +33,19 @@ import EastoverElectrical from "./pages/services/EastoverElectrical";
 import ElginHVAC from "./pages/services/ElginHVAC";
 import ElginPlumbing from "./pages/services/ElginPlumbing";
 import ElginElectrical from "./pages/services/ElginElectrical";
+// 1000-word comprehensive location pages
+import HVACColumbia1000 from "./pages/services/hvac-columbia-1000";
+import PlumbingColumbia1000 from "./pages/services/plumbing-columbia-1000";
+import ElectricalColumbia1000 from "./pages/services/electrical-columbia-1000";
+import HVACCayce1000 from "./pages/services/hvac-cayce-1000";
+import PlumbingCayce1000 from "./pages/services/plumbing-cayce-1000";
+import ElectricalCayce1000 from "./pages/services/electrical-cayce-1000";
+import HVACForestAcres1000 from "./pages/services/hvac-forest-acres-1000";
+import PlumbingForestAcres1000 from "./pages/services/plumbing-forest-acres-1000";
+import ElectricalForestAcres1000 from "./pages/services/electrical-forest-acres-1000";
+import HVACArcadiaLakes1000 from "./pages/services/hvac-arcadia-lakes-1000";
+import PlumbingArcadiaLakes1000 from "./pages/services/plumbing-arcadia-lakes-1000";
+import ElectricalArcadiaLakes1000 from "./pages/services/electrical-arcadia-lakes-1000";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BoydenArbor from "./pages/locations/boyden-arbor";
@@ -87,6 +100,19 @@ function Router() {
       <Route path={"/services/hvac"} component={HVACServices} />
       <Route path={"/services/plumbing"} component={PlumbingServices} />
       <Route path={"/services/electrical"} component={ElectricalServices} />
+      {/* 1000-word comprehensive location pages */}
+      <Route path={"/services/hvac-columbia-1000"} component={HVACColumbia1000} />
+      <Route path={"/services/plumbing-columbia-1000"} component={PlumbingColumbia1000} />
+      <Route path={"/services/electrical-columbia-1000"} component={ElectricalColumbia1000} />
+      <Route path={"/services/hvac-cayce-1000"} component={HVACCayce1000} />
+      <Route path={"/services/plumbing-cayce-1000"} component={PlumbingCayce1000} />
+      <Route path={"/services/electrical-cayce-1000"} component={ElectricalCayce1000} />
+      <Route path={"/services/hvac-forest-acres-1000"} component={HVACForestAcres1000} />
+      <Route path={"/services/plumbing-forest-acres-1000"} component={PlumbingForestAcres1000} />
+      <Route path={"/services/electrical-forest-acres-1000"} component={ElectricalForestAcres1000} />
+      <Route path={"/services/hvac-arcadia-lakes-1000"} component={HVACArcadiaLakes1000} />
+      <Route path={"/services/plumbing-arcadia-lakes-1000"} component={PlumbingArcadiaLakes1000} />
+      <Route path={"/services/electrical-arcadia-lakes-1000"} component={ElectricalArcadiaLakes1000} />
       <Route path={"/services/hvac-cayce-sc"} component={HVACCayce} />
       <Route path={"/services/plumbing-cayce-sc"} component={PlumbingCayce} />
       <Route path={"/services/electrical-cayce-sc"} component={ElectricalCayce} />

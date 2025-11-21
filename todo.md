@@ -340,18 +340,23 @@
 - [ ] Create service comparison pages (tankless vs traditional water heaters, filtration systems)
 
 ### Comprehensive Location Pages
-- [ ] Create 1000-word HVAC page for Columbia, SC
-- [ ] Create 1000-word Plumbing page for Columbia, SC
-- [ ] Create 1000-word Electrical page for Columbia, SC
-- [ ] Create 1000-word HVAC page for Cayce, SC
-- [ ] Create 1000-word Plumbing page for Cayce, SC
-- [ ] Create 1000-word Electrical page for Cayce, SC
-- [ ] Create 1000-word HVAC page for Forest Acres, SC
-- [ ] Create 1000-word Plumbing page for Forest Acres, SC
-- [ ] Create 1000-word Electrical page for Forest Acres, SC
+- [x] Create 1000-word HVAC page for Columbia, SC
+- [x] Create 1000-word Plumbing page for Columbia, SC
+- [x] Create 1000-word Electrical page for Columbia, SC
+- [x] Create 1000-word HVAC page for Cayce, SC
+- [x] Create 1000-word Plumbing page for Cayce, SC
+- [x] Create 1000-word Electrical page for Cayce, SC
+- [x] Create 1000-word HVAC page for Forest Acres, SC
+- [x] Create 1000-word Plumbing page for Forest Acres, SC
+- [x] Create 1000-word Electrical page for Forest Acres, SC
 - [ ] Create 1000-word HVAC page for Arcadia Lakes, SC
 - [ ] Create 1000-word Plumbing page for Arcadia Lakes, SC
 - [ ] Create 1000-word Electrical page for Arcadia Lakes, SC
+- [ ] Add routes in App.tsx for all 12 1000-word pages
+- [ ] Fix "App" branding on service+location pages
+- [ ] Fix centering issues in hero sections
+- [ ] Verify all location pages exist for all 4 towns
+- [ ] Update sitemap.xml with correct URLs only (remove non-existent pages)
 
 ### Deployment
 - [ ] Push all changes to GitHub
