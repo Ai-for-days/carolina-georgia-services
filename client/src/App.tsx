@@ -1,4 +1,5 @@
 import { Toaster } from "@/components/ui/sonner";
+import CanonicalURL from "./components/CanonicalURL";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
@@ -206,6 +207,7 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
+          <CanonicalURL />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
