@@ -391,3 +391,10 @@
 - [x] Add canonical URLs to all page components (added to App.tsx globally)
 - [x] Update sitemap.xml to use www.carolinageorgiaservices.com domain
 - [x] Push to GitHub and deploy to Vercel
+
+## Remove -1000 Suffix from URLs - November 2025
+
+- [x] Rename all comprehensive location page files to remove -1000 suffix
+- [x] Update routes in App.tsx to remove -1000 from URLs
+- [x] Update sitemap.xml to remove -1000 from URLs
+- [x] Push to GitHub and deploy to Vercel

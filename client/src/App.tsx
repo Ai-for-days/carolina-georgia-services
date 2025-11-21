@@ -22,34 +22,18 @@ import ElectricalColumbia from "./pages/services/electrical-columbia";
 import HVACForestAcres from "./pages/services/hvac-forest-acres";
 import PlumbingForestAcres from "./pages/services/plumbing-forest-acres";
 import ElectricalForestAcres from "./pages/services/electrical-forest-acres";
-import ArcadiaLakesHVAC from "./pages/services/ArcadiaLakesHVAC";
-import ArcadiaLakesPlumbing from "./pages/services/ArcadiaLakesPlumbing";
-import ArcadiaLakesElectrical from "./pages/services/ArcadiaLakesElectrical";
-import BlythewoodHVAC from "./pages/services/BlythewoodHVAC";
-import BlythewoodPlumbing from "./pages/services/BlythewoodPlumbing";
-import BlythewoodElectrical from "./pages/services/BlythewoodElectrical";
-import EastoverHVAC from "./pages/services/EastoverHVAC";
-import EastoverPlumbing from "./pages/services/EastoverPlumbing";
-import EastoverElectrical from "./pages/services/EastoverElectrical";
-import ElginHVAC from "./pages/services/ElginHVAC";
-import ElginPlumbing from "./pages/services/ElginPlumbing";
-import ElginElectrical from "./pages/services/ElginElectrical";
-// 1000-word comprehensive location pages
-import HVACColumbia1000 from "./pages/services/hvac-columbia-1000";
-import PlumbingColumbia1000 from "./pages/services/plumbing-columbia-1000";
-import ElectricalColumbia1000 from "./pages/services/electrical-columbia-1000";
-import HVACCayce1000 from "./pages/services/hvac-cayce-1000";
-import PlumbingCayce1000 from "./pages/services/plumbing-cayce-1000";
-import ElectricalCayce1000 from "./pages/services/electrical-cayce-1000";
-import HVACForestAcres1000 from "./pages/services/hvac-forest-acres-1000";
-import PlumbingForestAcres1000 from "./pages/services/plumbing-forest-acres-1000";
-import ElectricalForestAcres1000 from "./pages/services/electrical-forest-acres-1000";
-import HVACArcadiaLakes1000 from "./pages/services/hvac-arcadia-lakes-1000";
-import PlumbingArcadiaLakes1000 from "./pages/services/plumbing-arcadia-lakes-1000";
-import ElectricalArcadiaLakes1000 from "./pages/services/electrical-arcadia-lakes-1000";
-import HVACBlythewood1000 from "./pages/services/hvac-blythewood-1000";
-import PlumbingBlythewood1000 from "./pages/services/plumbing-blythewood-1000";
-import ElectricalBlythewood1000 from "./pages/services/electrical-blythewood-1000";
+import HVACArcadiaLakes from "./pages/services/hvac-arcadia-lakes";
+import PlumbingArcadiaLakes from "./pages/services/plumbing-arcadia-lakes";
+import ElectricalArcadiaLakes from "./pages/services/electrical-arcadia-lakes";
+import HVACBlythewood from "./pages/services/hvac-blythewood";
+import PlumbingBlythewood from "./pages/services/plumbing-blythewood";
+import ElectricalBlythewood from "./pages/services/electrical-blythewood";
+import HVACEastover from "./pages/services/hvac-eastover";
+import PlumbingEastover from "./pages/services/plumbing-eastover";
+import ElectricalEastover from "./pages/services/electrical-eastover";
+import HVACElgin from "./pages/services/hvac-elgin";
+import PlumbingElgin from "./pages/services/plumbing-elgin";
+import ElectricalElgin from "./pages/services/electrical-elgin";
 import TanklessVsTraditional from "./pages/comparisons/TanklessVsTraditional";
 import FiltrationSystems from "./pages/comparisons/FiltrationSystems";
 import Header from "./components/Header";
@@ -107,21 +91,21 @@ function Router() {
       <Route path={"/services/plumbing"} component={PlumbingServices} />
       <Route path={"/services/electrical"} component={ElectricalServices} />
       {/* 1000-word comprehensive location pages */}
-      <Route path={"/services/hvac-columbia-1000"} component={HVACColumbia1000} />
-      <Route path={"/services/plumbing-columbia-1000"} component={PlumbingColumbia1000} />
-      <Route path={"/services/electrical-columbia-1000"} component={ElectricalColumbia1000} />
-      <Route path={"/services/hvac-cayce-1000"} component={HVACCayce1000} />
-      <Route path={"/services/plumbing-cayce-1000"} component={PlumbingCayce1000} />
-      <Route path={"/services/electrical-cayce-1000"} component={ElectricalCayce1000} />
-      <Route path={"/services/hvac-forest-acres-1000"} component={HVACForestAcres1000} />
-      <Route path={"/services/plumbing-forest-acres-1000"} component={PlumbingForestAcres1000} />
-      <Route path={"/services/electrical-forest-acres-1000"} component={ElectricalForestAcres1000} />
-      <Route path={"/services/hvac-arcadia-lakes-1000"} component={HVACArcadiaLakes1000} />
-      <Route path={"/services/plumbing-arcadia-lakes-1000"} component={PlumbingArcadiaLakes1000} />
-      <Route path={"/services/electrical-arcadia-lakes-1000"} component={ElectricalArcadiaLakes1000} />
-      <Route path={"/services/hvac-blythewood-1000"} component={HVACBlythewood1000} />
-      <Route path={"/services/plumbing-blythewood-1000"} component={PlumbingBlythewood1000} />
-      <Route path={"/services/electrical-blythewood-1000"} component={ElectricalBlythewood1000} />
+      <Route path={"/services/hvac-columbia"} component={HVACColumbia} />
+      <Route path={"/services/plumbing-columbia"} component={PlumbingColumbia} />
+      <Route path={"/services/electrical-columbia"} component={ElectricalColumbia} />
+      <Route path={"/services/hvac-cayce"} component={HVACCayce} />
+      <Route path={"/services/plumbing-cayce"} component={PlumbingCayce} />
+      <Route path={"/services/electrical-cayce"} component={ElectricalCayce} />
+      <Route path={"/services/hvac-forest-acres"} component={HVACForestAcres} />
+      <Route path={"/services/plumbing-forest-acres"} component={PlumbingForestAcres} />
+      <Route path={"/services/electrical-forest-acres"} component={ElectricalForestAcres} />
+      <Route path={"/services/hvac-arcadia-lakes"} component={HVACArcadiaLakes} />
+      <Route path={"/services/plumbing-arcadia-lakes"} component={PlumbingArcadiaLakes} />
+      <Route path={"/services/electrical-arcadia-lakes"} component={ElectricalArcadiaLakes} />
+      <Route path={"/services/hvac-blythewood"} component={HVACBlythewood} />
+      <Route path={"/services/plumbing-blythewood"} component={PlumbingBlythewood} />
+      <Route path={"/services/electrical-blythewood"} component={ElectricalBlythewood} />
       {/* Comparison Pages */}
       <Route path={"/comparisons/tankless-vs-traditional"} component={TanklessVsTraditional} />
       <Route path={"/comparisons/water-filtration-systems"} component={FiltrationSystems} />
@@ -134,18 +118,18 @@ function Router() {
       <Route path={"/services/hvac-forest-acres-sc"} component={HVACForestAcres} />
       <Route path={"/services/plumbing-forest-acres-sc"} component={PlumbingForestAcres} />
       <Route path={"/services/electrical-forest-acres-sc"} component={ElectricalForestAcres} />
-      <Route path={"/services/hvac-arcadia-lakes-sc"} component={ArcadiaLakesHVAC} />
-      <Route path={"/services/plumbing-arcadia-lakes-sc"} component={ArcadiaLakesPlumbing} />
-      <Route path={"/services/electrical-arcadia-lakes-sc"} component={ArcadiaLakesElectrical} />
-      <Route path={"/services/hvac-blythewood-sc"} component={BlythewoodHVAC} />
-      <Route path={"/services/plumbing-blythewood-sc"} component={BlythewoodPlumbing} />
-      <Route path={"/services/electrical-blythewood-sc"} component={BlythewoodElectrical} />
-      <Route path={"/services/hvac-eastover-sc"} component={EastoverHVAC} />
-      <Route path={"/services/plumbing-eastover-sc"} component={EastoverPlumbing} />
-      <Route path={"/services/electrical-eastover-sc"} component={EastoverElectrical} />
-      <Route path={"/services/hvac-elgin-sc"} component={ElginHVAC} />
-      <Route path={"/services/plumbing-elgin-sc"} component={ElginPlumbing} />
-      <Route path={"/services/electrical-elgin-sc"} component={ElginElectrical} />
+      <Route path={"/services/hvac-arcadia-lakes-sc"} component={HVACArcadiaLakes} />
+      <Route path={"/services/plumbing-arcadia-lakes-sc"} component={PlumbingArcadiaLakes} />
+      <Route path={"/services/electrical-arcadia-lakes-sc"} component={ElectricalArcadiaLakes} />
+      <Route path={"/services/hvac-blythewood-sc"} component={HVACBlythewood} />
+      <Route path={"/services/plumbing-blythewood-sc"} component={PlumbingBlythewood} />
+      <Route path={"/services/electrical-blythewood-sc"} component={ElectricalBlythewood} />
+      <Route path={"/services/hvac-eastover-sc"} component={HVACEastover} />
+      <Route path={"/services/plumbing-eastover-sc"} component={PlumbingEastover} />
+      <Route path={"/services/electrical-eastover-sc"} component={ElectricalEastover} />
+      <Route path={"/services/hvac-elgin-sc"} component={HVACElgin} />
+      <Route path={"/services/plumbing-elgin-sc"} component={PlumbingElgin} />
+      <Route path={"/services/electrical-elgin-sc"} component={ElectricalElgin} />
       <Route path={"/locations/boyden-arbor"} component={BoydenArbor} />
       <Route path={"/locations/windsor-estates"} component={WindsorEstates} />
       <Route path={"/locations/fairwold-acres"} component={FairwoldAcres} />
