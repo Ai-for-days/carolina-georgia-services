@@ -398,3 +398,10 @@
 - [x] Update routes in App.tsx to remove -1000 from URLs
 - [x] Update sitemap.xml to remove -1000 from URLs
 - [x] Push to GitHub and deploy to Vercel
+
+## Fix Header Branding and Centering - November 2025
+
+- [x] Fix header to display "Carolina Georgia Services" instead of "App"
+- [x] Center hero section content on all service pages
+- [x] Ensure all text and CTAs are centered in hero sections
+- [ ] Push to GitHub and deploy to Vercel

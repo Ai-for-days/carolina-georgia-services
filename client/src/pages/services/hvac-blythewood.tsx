@@ -51,8 +51,8 @@ export default function HVACColumbia1000() {
         
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-red-600 to-orange-600 text-white py-16">
-          <div className="container">
-            <div className="flex items-center gap-3 mb-4">
+          <div className="container text-center">
+            <div className="flex items-center justify-center gap-3 mb-4">
               <Wind className="h-10 w-10" />
               <span className="text-2xl font-bold">24/7 EMERGENCY HVAC SERVICE IN COLUMBIA, SC</span>
             </div>
@@ -62,7 +62,7 @@ export default function HVACColumbia1000() {
             <p className="text-2xl mb-8 leading-relaxed max-w-4xl">
               When your AC fails during Columbia's sweltering summers or your furnace breaks down on a cold winter night, Carolina Georgia Services responds in 15-25 minutes with expert HVAC solutions. Serving Columbia homeowners and businesses with professional heating, cooling, and ventilation services since day one.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" variant="default" className="bg-white text-red-600 hover:bg-gray-100 text-xl px-8 py-6" asChild>
                 <a href={phoneLink}>
                   <Phone className="mr-2 h-6 w-6" />

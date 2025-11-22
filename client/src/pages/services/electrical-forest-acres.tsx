@@ -41,8 +41,8 @@ export default function ElectricalForestAcres1000() {
         
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-red-600 to-orange-600 text-white py-16">
-          <div className="container">
-            <div className="flex items-center gap-3 mb-4">
+          <div className="container text-center">
+            <div className="flex items-center justify-center gap-3 mb-4">
               <Zap className="h-10 w-10" />
               <span className="text-2xl font-bold">24/7 EMERGENCY ELECTRICAL SERVICE IN FOREST ACRES, SC</span>
             </div>
@@ -52,7 +52,7 @@ export default function ElectricalForestAcres1000() {
             <p className="text-2xl mb-8 leading-relaxed max-w-4xl">
               Power outage? Circuit breaker tripping? Electrical emergency? Carolina Georgia Services responds in 10-15 minutes with licensed electricians ready to solve any electrical problem. Serving Forest Acres homes and businesses with professional electrical repairs, panel upgrades, wiring, lighting installation, generator service, and emergency electrical work 24/7/365.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" variant="default" className="bg-white text-red-600 hover:bg-gray-100 text-xl px-8 py-6" asChild>
                 <a href={phoneLink}>
                   <Phone className="mr-2 h-6 w-6" />
