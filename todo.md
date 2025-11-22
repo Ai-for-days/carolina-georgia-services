@@ -404,4 +404,4 @@
 - [x] Fix header to display "Carolina Georgia Services" instead of "App"
 - [x] Center hero section content on all service pages
 - [x] Ensure all text and CTAs are centered in hero sections
-- [ ] Push to GitHub and deploy to Vercel
+- [x] Push to GitHub and deploy to Vercel
