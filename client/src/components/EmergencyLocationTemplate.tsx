@@ -84,7 +84,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
 
         {/* Response Times */}
         <section className="py-12 bg-gray-50">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-8 text-center">
               Lightning-Fast Response Across {location.name}
             </h2>
@@ -114,7 +114,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
 
         {/* Weather Challenges */}
         <section className="py-12">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-8">
               {location.name} Weather Emergencies We Handle 24/7
             </h2>
@@ -147,7 +147,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
 
         {/* Local Details */}
         <section className="py-12 bg-gray-50">
-          <div className="container">
+          <div className="container text-center">
             {location.localDetails.map((detail, idx) => (
               <div key={idx} className="mb-12 last:mb-0">
                 <h2 className="text-3xl font-bold mb-4">{detail.title}</h2>
@@ -167,7 +167,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
 
         {/* Neighborhoods */}
         <section className="py-12">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-8">
               We Serve Every Neighborhood in {location.name}
             </h2>
@@ -200,7 +200,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
 
         {/* Driving Directions */}
         <section className="py-12 bg-gray-50">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-8">
               Driving Directions from Major {location.name} Landmarks
             </h2>
@@ -234,7 +234,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
 
         {/* Major Employers */}
         <section className="py-12">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-4">
               Trusted by {location.name}'s Largest Employers
             </h2>
@@ -270,7 +270,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
 
         {/* Why Choose Us */}
         <section className="py-12 bg-orange-600 text-white">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-8 text-center">
               Why {location.name} Chooses Carolina Georgia Services
             </h2>

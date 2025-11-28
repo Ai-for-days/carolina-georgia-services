@@ -440,3 +440,12 @@
 - [ ] Center all content in EmergencyLocationTemplate
 - [ ] Verify centering on all service+location pages
 - [ ] Push to GitHub and deploy
+
+
+## CENTER ALL BODY TEXT - CRITICAL FIX - November 28, 2025
+
+- [ ] Add text-center to ALL sections in ServiceLocationTemplate (not just hero)
+- [ ] Center all paragraphs, descriptions, and body text
+- [ ] Add text-center to ALL sections in EmergencyLocationTemplate
+- [ ] Test locally to verify centering
+- [ ] Push to GitHub and deploy

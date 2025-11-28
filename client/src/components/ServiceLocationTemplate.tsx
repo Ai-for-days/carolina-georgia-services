@@ -111,7 +111,7 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
 
         {/* Services Overview */}
         <section className="py-12 bg-gray-50">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-8 text-center">
               Our {service.name} Services in {location.name}
             </h2>
@@ -145,7 +145,7 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
 
         {/* Common Problems */}
         <section className="py-12">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-4 text-center">
               Common {service.name} Problems We Solve in {location.name}
             </h2>
@@ -188,7 +188,7 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
 
         {/* Our Process */}
         <section className="py-12 bg-gray-50">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-8 text-center">
               Our {service.name} Service Process in {location.name}
             </h2>
@@ -220,7 +220,7 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
 
         {/* Why Choose Us */}
         <section className="py-12 bg-orange-600 text-white">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-8 text-center">
               Why Choose Us for {service.name} in {location.name}?
             </h2>
@@ -245,7 +245,7 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
 
         {/* FAQs */}
         <section className="py-12">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-8 text-center">
               Frequently Asked Questions About {service.name} in {location.name}
             </h2>
@@ -287,7 +287,7 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
 
         {/* Related Services */}
         <section className="py-12 bg-gray-50">
-          <div className="container">
+          <div className="container text-center">
             <h2 className="text-3xl font-bold mb-8 text-center">
               More Services in {location.name}
             </h2>
