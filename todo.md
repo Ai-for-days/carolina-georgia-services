@@ -413,4 +413,4 @@
 - [x] Update Home page
 - [x] Update all service pages
 - [x] Update all location pages
-- [ ] Push to GitHub and deploy to Vercel
+- [x] Push to GitHub and deploy to Vercel
