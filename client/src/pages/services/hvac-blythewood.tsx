@@ -17,7 +17,7 @@ export default function HVACColumbia1000() {
   return (
     <>
       <SEO
-        title="HVAC Services in Columbia, SC | 24/7 Emergency Heating & Air Conditioning | Carolina Georgia Services"
+        title="HVAC Services in Columbia, SC | 24/7 Emergency Heating and Air Conditioning | Carolina Georgia Services"
         description="Expert HVAC services in Columbia, SC. 24/7 emergency heating and air conditioning repair, installation, and maintenance. 15-25 minute response time. Call (888) 885-7330."
         keywords="HVAC Columbia SC, air conditioning repair Columbia, heating repair Columbia, AC installation Columbia, furnace repair Columbia, emergency HVAC Columbia"
         schema={{
@@ -57,7 +57,7 @@ export default function HVACColumbia1000() {
               <span className="text-2xl font-bold">24/7 EMERGENCY HVAC SERVICE IN COLUMBIA, SC</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Expert Heating & Air Conditioning Services in Columbia, South Carolina
+              Expert Heating and Air Conditioning Services in Columbia, South Carolina
             </h1>
             <p className="text-2xl mb-8 leading-relaxed max-w-4xl">
               When your AC fails during Columbia's sweltering summers or your furnace breaks down on a cold winter night, Carolina Georgia Services responds in 15-25 minutes with expert HVAC solutions. Serving Columbia homeowners and businesses with professional heating, cooling, and ventilation services since day one.
@@ -293,7 +293,7 @@ export default function HVACColumbia1000() {
                     <div className="flex items-start gap-4">
                       <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                       <div>
-                        <h3 className="font-bold text-xl mb-2">Licensed & Insured Technicians</h3>
+                        <h3 className="font-bold text-xl mb-2">Licensed and Insured Technicians</h3>
                         <p className="text-foreground/90">
                           Every technician is fully licensed, background-checked, and continuously trained on the latest HVAC technology and best practices.
                         </p>

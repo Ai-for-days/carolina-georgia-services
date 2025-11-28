@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="HVAC, Plumbing & Electrical Services | Richland County SC | Carolina Georgia Services"
+        title="HVAC, Plumbing and Electrical Services | Richland County SC | Carolina Georgia Services"
         description="24/7 emergency HVAC, plumbing & electrical service across all 38 Richland County locations including Columbia, Irmo, Cayce, Forest Acres. Licensed, insured, same-day appointments. Call now!"
         keywords="HVAC Richland County, plumber Columbia SC, electrician Richland County, emergency HVAC, 24/7 plumber, AC repair Columbia, heating service SC"
         schema={generateLocalBusinessSchema()}
@@ -33,7 +33,7 @@ export default function Home() {
         <div className="container relative py-20 md:py-32">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Expert HVAC, Plumbing & Electrical Services
+              Expert HVAC, Plumbing and Electrical Services
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
               Serving every community across South Carolina, North Carolina, and Georgia with professional, reliable service you can trust.
@@ -77,7 +77,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• AC Installation & Repair</li>
+                  <li>• AC Installation and Repair</li>
                   <li>• Heating System Service</li>
                   <li>• Preventive Maintenance</li>
                   <li>• Emergency 24/7 Service</li>
@@ -97,7 +97,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Leak Detection & Repair</li>
+                  <li>• Leak Detection and Repair</li>
                   <li>• Drain Cleaning</li>
                   <li>• Water Heater Service</li>
                   <li>• Pipe Installation</li>
@@ -150,7 +150,7 @@ export default function Home() {
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Licensed & Insured</h3>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">Licensed and Insured</h3>
               <p className="text-muted-foreground">
                 Fully certified professionals you can trust
               </p>

@@ -21,7 +21,7 @@ export default function LocationPageTemplate({
   return (
     <div className="min-h-screen">
       <SEO 
-        title={`HVAC, Plumbing & Electrical Services in ${locationName}, SC | Carolina Georgia Services`}
+        title={`HVAC, Plumbing and Electrical Services in ${locationName}, SC | Carolina Georgia Services`}
         description={`Expert HVAC, plumbing & electrical service in ${locationName}, SC. Emergency repairs, installations, maintenance. 24/7 availability. Licensed & insured. Call for same-day service!`}
         keywords={`HVAC ${locationName}, plumber ${locationName} SC, electrician ${locationName}, AC repair ${locationName}, emergency HVAC ${locationName}, plumbing services ${locationName}`}
         schema={schema}
@@ -37,7 +37,7 @@ export default function LocationPageTemplate({
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              HVAC, Plumbing & Electrical Services in {locationName}, SC
+              HVAC, Plumbing and Electrical Services in {locationName}, SC
             </h1>
             <p className="text-xl md:text-2xl mb-6 text-primary-foreground/90">
               Trusted local service for your {locationType} community

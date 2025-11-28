@@ -277,7 +277,7 @@ export default function PlumbingForestAcres1000() {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-2xl">Fixture Repairs & Replacements</CardTitle>
+                    <CardTitle className="text-2xl">Fixture Repairs and Replacements</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-foreground/90 mb-4">
@@ -322,7 +322,7 @@ export default function PlumbingForestAcres1000() {
                     <div className="flex items-start gap-4">
                       <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                       <div>
-                        <h3 className="font-bold text-xl mb-2">Licensed & Insured Plumbers</h3>
+                        <h3 className="font-bold text-xl mb-2">Licensed and Insured Plumbers</h3>
                         <p className="text-foreground/90">
                           Every plumber is fully licensed, background-checked, and continuously trained on the latest plumbing codes and techniques.
                         </p>

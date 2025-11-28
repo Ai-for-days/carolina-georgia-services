@@ -34,7 +34,7 @@ export default function Emergency() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="24/7 Emergency HVAC, Plumbing & Electrical | Richland County SC"
+        title="24/7 Emergency HVAC, Plumbing and Electrical | Richland County SC"
         description="Emergency HVAC, plumbing & electrical service available 24/7 in Columbia, Irmo, Cayce, Forest Acres & all Richland County. Same-day service. Burst pipes, no heat, power outages. Call now!"
         keywords="24 hour emergency HVAC Columbia SC, emergency plumber Richland County, same day AC repair, emergency electrician near me, burst pipe repair, no heat emergency, power outage electrician"
         schema={schema}
@@ -51,7 +51,7 @@ export default function Emergency() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">24/7 Emergency Service</h1>
             <p className="text-xl md:text-2xl mb-8 text-destructive-foreground/90">
-              HVAC, Plumbing & Electrical Emergencies Resolved Fast
+              HVAC, Plumbing and Electrical Emergencies Resolved Fast
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:+18005551234">
@@ -217,7 +217,7 @@ export default function Emergency() {
               <div className="w-16 h-16 bg-destructive rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-destructive-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Licensed & Insured</h3>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">Licensed and Insured</h3>
               <p className="text-muted-foreground">
                 Fully certified professionals you can trust
               </p>

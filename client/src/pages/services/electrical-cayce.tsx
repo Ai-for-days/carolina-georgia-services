@@ -311,7 +311,7 @@ export default function ElectricalCayce1000() {
                     <div className="flex items-start gap-4">
                       <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                       <div>
-                        <h3 className="font-bold text-xl mb-2">Licensed & Insured Electricians</h3>
+                        <h3 className="font-bold text-xl mb-2">Licensed and Insured Electricians</h3>
                         <p className="text-foreground/90">
                           Every electrician holds proper South Carolina electrical contractor licenses, carries comprehensive liability insurance, and follows NEC requirements on every job.
                         </p>

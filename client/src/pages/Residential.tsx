@@ -12,7 +12,7 @@ export default function Residential() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Residential HVAC, Plumbing & Electrical | Richland County SC"
+        title="Residential HVAC, Plumbing and Electrical | Richland County SC"
         description="Residential HVAC, plumbing & electrical services for homeowners in Columbia, Irmo, Cayce, Forest Acres & all Richland County. AC installation, water heater repair, electrical upgrades. Same-day service available."
         keywords="residential HVAC Columbia SC, home AC installation, residential plumber Irmo, home electrical repair, furnace replacement, water heater installation, electrical panel upgrade"
         schema={schema}

@@ -53,7 +53,7 @@ export default function PlumbingServices() {
             <Card>
               <CardHeader>
                 <Droplet className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Leak Detection & Repair</CardTitle>
+                <CardTitle>Leak Detection and Repair</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">

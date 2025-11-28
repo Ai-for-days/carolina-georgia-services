@@ -17,7 +17,7 @@ export default function HVACArcadiaLakes1000() {
   return (
     <>
       <SEO
-        title="HVAC Services in Arcadia Lakes, SC | 24/7 Emergency Heating & Air Conditioning | Carolina Georgia Services"
+        title="HVAC Services in Arcadia Lakes, SC | 24/7 Emergency Heating and Air Conditioning | Carolina Georgia Services"
         description="Expert HVAC services in Arcadia Lakes, SC. 24/7 emergency heating and air conditioning repair, installation, and maintenance. 8-12 minute response time. Call (888) 885-7330."
         keywords="HVAC Arcadia Lakes SC, air conditioning repair Arcadia Lakes, heating repair Arcadia Lakes, AC installation Arcadia Lakes, furnace repair Arcadia Lakes, emergency HVAC Arcadia Lakes"
         schema={{
@@ -47,7 +47,7 @@ export default function HVACArcadiaLakes1000() {
               <span className="text-2xl font-bold">24/7 EMERGENCY HVAC SERVICE IN ARCADIA LAKES, SC</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Expert Heating & Air Conditioning Services in Arcadia Lakes, South Carolina
+              Expert Heating and Air Conditioning Services in Arcadia Lakes, South Carolina
             </h1>
             <p className="text-2xl mb-8 leading-relaxed max-w-4xl mx-auto">
               AC failure during Arcadia Lakes' sweltering summers? Furnace breakdown on a cold winter night? Carolina Georgia Services responds in 8-12 minutes with expert HVAC solutions. Serving Arcadia Lakes homeowners and businesses with professional heating, cooling, and ventilation services 24/7/365.
@@ -283,7 +283,7 @@ export default function HVACArcadiaLakes1000() {
                     <div className="flex items-start gap-4">
                       <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                       <div>
-                        <h3 className="font-bold text-xl mb-2">Licensed & Insured Technicians</h3>
+                        <h3 className="font-bold text-xl mb-2">Licensed and Insured Technicians</h3>
                         <p className="text-foreground/90">
                           Every technician is fully licensed, background-checked, and continuously trained on the latest HVAC technology and best practices.
                         </p>

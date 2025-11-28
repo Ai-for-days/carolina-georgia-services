@@ -86,7 +86,7 @@ export default function Columbia() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Emergency HVAC, Plumbing & Electrical Columbia SC | 24/7 Service"
+        title="Emergency HVAC, Plumbing and Electrical Columbia SC | 24/7 Service"
         description="Need emergency HVAC, plumbing, or electrical service in Columbia, SC? Call (888) 885-7330 for 24/7 rapid response. AC failures, burst pipes, power outages - we fix it fast!"
         keywords="emergency HVAC Columbia SC, emergency plumber Columbia, 24/7 electrician Columbia, AC repair Columbia, burst pipe Columbia, emergency service Columbia South Carolina"
       />
@@ -100,7 +100,7 @@ export default function Columbia() {
               <span className="text-sm font-bold uppercase tracking-wide">24/7 Emergency Service Available Now</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Emergency HVAC, Plumbing & Electrical Services in Columbia, SC
+              Emergency HVAC, Plumbing and Electrical Services in Columbia, SC
             </h1>
             <p className="text-xl mb-8 opacity-95">
               AC died in Columbia's brutal heat? Pipe burst flooding your downtown home? Power outage at your USC-area business? We're here 24/7 with the fastest emergency response in the capital city. Average arrival time: <strong>12-18 minutes</strong>.
@@ -117,7 +117,7 @@ export default function Columbia() {
             </div>
             <p className="mt-6 text-sm opacity-90">
               <CheckCircle2 className="inline h-5 w-5 mr-1" />
-              Licensed & Insured • Upfront Pricing • No Overtime Charges
+              Licensed and Insured • Upfront Pricing • No Overtime Charges
             </p>
           </div>
         </div>

@@ -7,7 +7,7 @@ export default function HVACServices() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="HVAC Services | Heating & Air Conditioning | Carolina Georgia Services"
+        title="HVAC Services | Heating and Air Conditioning | Carolina Georgia Services"
         description="Professional HVAC services including AC installation, furnace repair, heat pump service, and 24/7 emergency HVAC repairs across Richland County, SC."
         keywords="HVAC services, AC repair, furnace installation, heat pump, air conditioning, heating, Richland County SC"
       />
@@ -21,7 +21,7 @@ export default function HVACServices() {
               <span className="text-sm font-semibold uppercase tracking-wide">Professional HVAC Services</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Expert Heating & Air Conditioning Services
+              Expert Heating and Air Conditioning Services
             </h1>
             <p className="text-xl mb-8 opacity-95">
               Keep your home or business comfortable year-round with our comprehensive HVAC solutions. From installation to emergency repairs, we've got you covered.
@@ -299,7 +299,7 @@ export default function HVACServices() {
             <Card>
               <CardHeader>
                 <Shield className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Licensed & Insured</CardTitle>
+                <CardTitle>Licensed and Insured</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">

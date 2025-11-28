@@ -21,7 +21,7 @@ export default function Commercial() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Commercial HVAC, Plumbing & Electrical | Columbia SC | Richland County"
+        title="Commercial HVAC, Plumbing and Electrical | Columbia SC | Richland County"
         description="Commercial HVAC, plumbing & electrical services for restaurants, offices, retail, and industrial facilities in Columbia SC and Richland County. Preventive maintenance programs, emergency service, installations."
         keywords="commercial HVAC Columbia SC, commercial plumber Richland County, commercial electrician Columbia, restaurant HVAC service, office building plumbing, retail electrical contractor, industrial plumbing"
         schema={schema}
@@ -38,7 +38,7 @@ export default function Commercial() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Commercial Services</h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
-              Professional HVAC, Plumbing & Electrical Solutions for Your Business
+              Professional HVAC, Plumbing and Electrical Solutions for Your Business
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:+18005551234">

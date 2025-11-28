@@ -106,7 +106,7 @@ export function generateLocalBusinessSchema(location?: string) {
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "HVAC, Plumbing & Electrical Services",
+      "name": "HVAC, Plumbing and Electrical Services",
       "itemListElement": [
         {
           "@type": "Offer",

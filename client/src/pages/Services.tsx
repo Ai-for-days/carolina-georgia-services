@@ -25,7 +25,7 @@ export default function Services() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="HVAC, Plumbing & Electrical Services | Richland County SC"
+        title="HVAC, Plumbing and Electrical Services | Richland County SC"
         description="Complete HVAC, plumbing & electrical solutions for residential & commercial properties in Columbia, Irmo, Cayce, Forest Acres & all 38 Richland County locations. Emergency service available 24/7."
         keywords="HVAC services Richland County, plumbing services Columbia SC, electrical services Richland County, AC repair, furnace installation, water heater, electrical panel upgrade"
         schema={schema}

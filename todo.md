@@ -405,3 +405,12 @@
 - [x] Center hero section content on all service pages
 - [x] Ensure all text and CTAs are centered in hero sections
 - [x] Push to GitHub and deploy to Vercel
+
+## Center Homepage Content & Replace Ampersands - November 2025
+
+- [x] Center homepage hero section content (heading, description, buttons)
+- [x] Replace all "&" with "and" throughout the entire site
+- [x] Update Home page
+- [x] Update all service pages
+- [x] Update all location pages
+- [ ] Push to GitHub and deploy to Vercel

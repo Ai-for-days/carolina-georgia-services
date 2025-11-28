@@ -86,7 +86,7 @@ export default function Cayce() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Emergency HVAC, Plumbing & Electrical Cayce SC | 24/7 Service"
+        title="Emergency HVAC, Plumbing and Electrical Cayce SC | 24/7 Service"
         description="Need emergency HVAC, plumbing, or electrical service in Cayce, SC? Call (888) 885-7330 for 24/7 rapid response. AC failures, burst pipes, power outages - we fix it fast!"
         keywords="emergency HVAC Cayce SC, emergency plumber Cayce, 24/7 electrician Cayce, AC repair Cayce, burst pipe Cayce, emergency service Cayce South Carolina"
       />
@@ -100,7 +100,7 @@ export default function Cayce() {
               <span className="text-sm font-bold uppercase tracking-wide">24/7 Emergency Service Available Now</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Emergency HVAC, Plumbing & Electrical Services in Cayce, SC
+              Emergency HVAC, Plumbing and Electrical Services in Cayce, SC
             </h1>
             <p className="text-xl mb-8 opacity-95">
               AC stopped working in this South Carolina heat? Burst pipe flooding your home? Power out? We're here 24/7 with rapid response to Cayce emergencies. Average arrival time: <strong>15-20 minutes</strong>.
@@ -117,7 +117,7 @@ export default function Cayce() {
             </div>
             <p className="mt-6 text-sm opacity-90">
               <CheckCircle2 className="inline h-5 w-5 mr-1" />
-              Licensed & Insured • Upfront Pricing • No Overtime Charges
+              Licensed and Insured • Upfront Pricing • No Overtime Charges
             </p>
           </div>
         </div>
