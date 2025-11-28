@@ -56,8 +56,8 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
         
         {/* Emergency Alert Hero */}
         <section className="bg-gradient-to-r from-red-600 to-orange-600 text-white py-12">
-          <div className="container">
-            <div className="flex items-center gap-3 mb-4">
+          <div className="container text-center">
+            <div className="flex items-center gap-3 mb-4 justify-center">
               <AlertCircle className="w-8 h-8 animate-pulse" />
               <span className="text-xl font-bold">24/7 EMERGENCY SERVICE</span>
             </div>
@@ -67,7 +67,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
             <p className="text-xl mb-6 leading-relaxed">
               {location.heroDescription}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" variant="default" className="bg-white text-red-600 hover:bg-gray-100" asChild>
                 <a href={phoneLink}>
                   <Phone className="mr-2 h-5 w-5" />

@@ -83,8 +83,8 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
         
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-red-600 to-orange-600 text-white py-12">
-          <div className="container">
-            <div className="flex items-center gap-3 mb-4">
+          <div className="container text-center">
+            <div className="flex items-center gap-3 mb-4 justify-center">
               {getServiceIcon()}
               <span className="text-xl font-bold">24/7 EMERGENCY {service.name.toUpperCase()} SERVICE</span>
             </div>
@@ -94,7 +94,7 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
             <p className="text-xl mb-6 leading-relaxed">
               {replaceCity(service.heroDescription)}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" variant="default" className="bg-white text-red-600 hover:bg-gray-100" asChild>
                 <a href={phoneLink}>
                   <Phone className="mr-2 h-5 w-5" />

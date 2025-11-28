@@ -430,3 +430,13 @@
 - [ ] Verify "Why Choose" section is centered
 - [ ] Verify location section is centered
 - [ ] Push to GitHub and deploy to Vercel
+
+
+## CENTER ALL PAGES - URGENT FIX - November 28, 2025
+
+- [ ] Find ServiceLocationTemplate component
+- [ ] Center all content in ServiceLocationTemplate (hero, headings, descriptions, CTAs)
+- [ ] Find EmergencyLocationTemplate component  
+- [ ] Center all content in EmergencyLocationTemplate
+- [ ] Verify centering on all service+location pages
+- [ ] Push to GitHub and deploy
