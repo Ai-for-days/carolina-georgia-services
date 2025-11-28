@@ -65,9 +65,9 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border-2 hover:border-primary transition-colors">
+            <Card className="border-2 hover:border-primary transition-colors text-center">
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                   <Thermometer className="w-6 h-6 text-primary" />
                 </div>
                 <CardTitle className="text-2xl">HVAC Services</CardTitle>
@@ -76,7 +76,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-muted-foreground">
+                <ul className="space-y-2 text-muted-foreground list-none">
                   <li>• AC Installation and Repair</li>
                   <li>• Heating System Service</li>
                   <li>• Preventive Maintenance</li>
@@ -85,9 +85,9 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary transition-colors">
+            <Card className="border-2 hover:border-primary transition-colors text-center">
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                   <Wrench className="w-6 h-6 text-primary" />
                 </div>
                 <CardTitle className="text-2xl">Plumbing Services</CardTitle>
@@ -96,7 +96,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-muted-foreground">
+                <ul className="space-y-2 text-muted-foreground list-none">
                   <li>• Leak Detection and Repair</li>
                   <li>• Drain Cleaning</li>
                   <li>• Water Heater Service</li>
@@ -105,9 +105,9 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary transition-colors">
+            <Card className="border-2 hover:border-primary transition-colors text-center">
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                   <Zap className="w-6 h-6 text-primary" />
                 </div>
                 <CardTitle className="text-2xl">Electrical Services</CardTitle>
@@ -116,7 +116,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-muted-foreground">
+                <ul className="space-y-2 text-muted-foreground list-none">
                   <li>• Electrical Repairs</li>
                   <li>• Panel Upgrades</li>
                   <li>• Lighting Installation</li>

@@ -414,3 +414,11 @@
 - [x] Update all service pages
 - [x] Update all location pages
 - [x] Push to GitHub and deploy to Vercel
+
+## Center All Homepage Content - November 2025
+
+- [x] Center service card titles and descriptions
+- [x] Center service card bullet lists
+- [x] Center "Why Choose" section content (already centered)
+- [x] Center location section content (already centered)
+- [ ] Push to GitHub and deploy to Vercel
