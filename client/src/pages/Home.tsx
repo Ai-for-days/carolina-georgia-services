@@ -30,15 +30,15 @@ export default function Home() {
           />
           </picture>
         </div>
-        <div className="container relative py-20 md:py-32">
-          <div className="max-w-3xl">
+        <div className="container relative py-20 md:py-32 text-center">
+          <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Expert HVAC, Plumbing and Electrical Services
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
               Serving every community across South Carolina, North Carolina, and Georgia with professional, reliable service you can trust.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/services">
                 <Button size="lg" variant="secondary" className="text-lg px-8">
                   Our Services
