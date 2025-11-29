@@ -91,7 +91,7 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {replaceCity(service.heroTitle)}
             </h1>
-            <p className="text-xl mb-6 leading-relaxed">
+            <p className="text-xl mb-6 leading-relaxed max-w-4xl mx-auto">
               {replaceCity(service.heroDescription)}
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
@@ -119,9 +119,9 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
               {service.services.map((svc, idx) => (
                 <Card key={idx}>
                   <CardHeader>
-                    <CardTitle className="text-xl">{svc.title}</CardTitle>
+                    <CardTitle className="text-xl text-center">{svc.title}</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="text-left">
                     <p className="text-gray-700 mb-4">{replaceCity(svc.description)}</p>
                     <ul className="space-y-2">
                       {svc.items.map((item, itemIdx) => (
@@ -156,12 +156,12 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
               {service.commonProblems.map((problem, idx) => (
                 <Card key={idx} className="border-l-4 border-l-orange-600">
                   <CardHeader>
-                    <CardTitle className="text-xl flex items-start gap-2">
+                    <CardTitle className="text-xl flex items-start gap-2 text-center justify-center">
                       <AlertCircle className="h-6 w-6 text-red-600 flex-shrink-0 mt-0.5" />
                       <span>{replaceCity(problem.title)}</span>
                     </CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="text-left">
                     <p className="text-gray-700 mb-4">{replaceCity(problem.description)}</p>
                     <div className="bg-orange-50 p-4 rounded-lg border border-orange-200">
                       <p className="font-semibold text-orange-900 mb-2">Our Solution:</p>
@@ -255,7 +255,7 @@ export default function ServiceLocationTemplate({ service, location }: ServiceLo
                   <CardHeader>
                     <CardTitle className="text-lg">{replaceCity(faq.question)}</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="text-left">
                     <p className="text-gray-700">{replaceCity(faq.answer)}</p>
                   </CardContent>
                 </Card>

@@ -69,10 +69,10 @@ export default function HVACForestAcres1000() {
 
         {/* Main Content */}
         <section className="py-16 bg-background">
-          <div className="container max-w-5xl">
+          <div className="container max-w-5xl text-center">
             
             {/* Introduction */}
-            <div className="prose prose-lg max-w-none mb-12">
+            <div className="prose prose-lg max-w-none mb-12 mx-auto">
               <h2 className="text-4xl font-bold mb-6 text-foreground">Forest Acres' Trusted HVAC Experts</h2>
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
                 Forest Acres, South Carolina is an established residential community just northeast of downtown Columbia, known for its tree-lined streets, well-maintained homes, and family-friendly neighborhoods. The city's mature housing stock and dense tree canopy create unique HVAC challenges that require professional expertise and rapid emergency response. Summer temperatures regularly exceed 95°F with oppressive humidity, while winter cold snaps can drop temperatures into the 20s, making reliable heating and cooling essential for comfort and safety.

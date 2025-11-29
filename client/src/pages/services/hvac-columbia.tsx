@@ -79,10 +79,10 @@ export default function HVACColumbia1000() {
 
         {/* Main Content */}
         <section className="py-16 bg-background">
-          <div className="container max-w-5xl">
+          <div className="container max-w-5xl text-center">
             
             {/* Introduction */}
-            <div className="prose prose-lg max-w-none mb-12">
+            <div className="prose prose-lg max-w-none mb-12 mx-auto">
               <h2 className="text-4xl font-bold mb-6 text-foreground">Columbia's Trusted HVAC Experts</h2>
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
                 Columbia, South Carolina experiences some of the most challenging climate conditions in the Southeast. Summer temperatures regularly soar above 95°F with oppressive humidity, while winter cold snaps can push temperatures below freezing. Your HVAC system works harder in Columbia than in most other cities, making professional maintenance and rapid emergency response absolutely critical for your comfort and safety.

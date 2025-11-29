@@ -69,10 +69,10 @@ export default function ElectricalCayce1000() {
 
         {/* Main Content */}
         <section className="py-16 bg-background">
-          <div className="container max-w-5xl">
+          <div className="container max-w-5xl text-center">
             
             {/* Introduction */}
-            <div className="prose prose-lg max-w-none mb-12">
+            <div className="prose prose-lg max-w-none mb-12 mx-auto">
               <h2 className="text-4xl font-bold mb-6 text-foreground">Cayce's Most Trusted Licensed Electricians</h2>
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
                 Electrical problems create immediate safety hazards and require professional expertise. A sparking outlet could indicate dangerous wiring faults that might start a fire. A circuit breaker that keeps tripping signals overloaded circuits or short circuits. A complete power loss leaves your Cayce home without lights, heating, cooling, or refrigeration. When these electrical emergencies strike, you need a licensed electrician who responds immediately and fixes problems safely.

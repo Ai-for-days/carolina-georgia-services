@@ -69,10 +69,10 @@ export default function HVACCayce1000() {
 
         {/* Main Content */}
         <section className="py-16 bg-background">
-          <div className="container max-w-5xl">
+          <div className="container max-w-5xl text-center">
             
             {/* Introduction */}
-            <div className="prose prose-lg max-w-none mb-12">
+            <div className="prose prose-lg max-w-none mb-12 mx-auto">
               <h2 className="text-4xl font-bold mb-6 text-foreground">Cayce's Trusted HVAC Experts</h2>
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
                 Cayce, South Carolina sits directly across the Congaree River from Columbia, sharing the same challenging subtropical climate that puts enormous stress on heating and cooling systems. Summer temperatures regularly exceed 95°F with oppressive humidity that makes air conditioning essential for comfort and safety. Winter cold snaps can drop temperatures into the 20s, requiring reliable heating to keep families comfortable.

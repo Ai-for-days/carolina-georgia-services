@@ -64,7 +64,7 @@ export default function EmergencyLocationTemplate({ location }: EmergencyLocatio
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {location.heroTitle}
             </h1>
-            <p className="text-xl mb-6 leading-relaxed">
+            <p className="text-xl mb-6 leading-relaxed max-w-4xl mx-auto">
               {location.heroDescription}
             </p>
             <div className="flex flex-wrap gap-4 justify-center">

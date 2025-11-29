@@ -69,10 +69,10 @@ export default function PlumbingForestAcres1000() {
 
         {/* Main Content */}
         <section className="py-16 bg-background">
-          <div className="container max-w-5xl">
+          <div className="container max-w-5xl text-center">
             
             {/* Introduction */}
-            <div className="prose prose-lg max-w-none mb-12">
+            <div className="prose prose-lg max-w-none mb-12 mx-auto">
               <h2 className="text-4xl font-bold mb-6 text-foreground">Forest Acres' Most Trusted Plumbing Company</h2>
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
                 Plumbing emergencies strike without warning and require immediate professional response. A burst pipe floods your Forest Acres home with hundreds of gallons per hour, destroying hardwood floors and valuable possessions. Your water heater fails on Sunday morning, leaving your family without hot water. Your main sewer line backs up, creating unsanitary conditions and serious health hazards. When these disasters happen, you need a licensed plumber who answers immediately, arrives quickly, and fixes the problem right the first time.

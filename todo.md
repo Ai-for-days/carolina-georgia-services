@@ -457,3 +457,12 @@
 - [ ] Push to GitHub
 - [ ] Deploy to Vercel
 - [ ] Verify in Google Search Console
+
+
+## Fix Paragraph Centering - CRITICAL - November 28, 2025
+
+- [ ] Add max-width and mx-auto to hero description paragraphs
+- [ ] Ensure headings are centered
+- [ ] Keep card content left-aligned for readability
+- [ ] Test all service+location pages
+- [ ] Push to GitHub and deploy

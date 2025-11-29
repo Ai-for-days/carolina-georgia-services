@@ -69,10 +69,10 @@ export default function HVACArcadiaLakes1000() {
 
         {/* Main Content */}
         <section className="py-16 bg-background">
-          <div className="container max-w-5xl">
+          <div className="container max-w-5xl text-center">
             
             {/* Introduction */}
-            <div className="prose prose-lg max-w-none mb-12">
+            <div className="prose prose-lg max-w-none mb-12 mx-auto">
               <h2 className="text-4xl font-bold mb-6 text-foreground text-center">Arcadia Lakes' Trusted HVAC Experts</h2>
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
                 Arcadia Lakes, South Carolina is an exclusive lakefront community known for its beautiful waterfront properties, tree-lined streets, and upscale homes. This small but affluent town surrounds its namesake lake, creating a unique environment where lakefront living meets suburban comfort. The proximity to water, mature landscaping, and high-end construction create specific HVAC challenges that require professional expertise and rapid emergency response.
