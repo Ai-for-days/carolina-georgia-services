@@ -76,7 +76,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-muted-foreground list-none">
+                <ul className="space-y-2 text-muted-foreground list-none text-center">
                   <li>• AC Installation and Repair</li>
                   <li>• Heating System Service</li>
                   <li>• Preventive Maintenance</li>
@@ -96,7 +96,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-muted-foreground list-none">
+                <ul className="space-y-2 text-muted-foreground list-none text-center">
                   <li>• Leak Detection and Repair</li>
                   <li>• Drain Cleaning</li>
                   <li>• Water Heater Service</li>
@@ -116,7 +116,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-muted-foreground list-none">
+                <ul className="space-y-2 text-muted-foreground list-none text-center">
                   <li>• Electrical Repairs</li>
                   <li>• Panel Upgrades</li>
                   <li>• Lighting Installation</li>

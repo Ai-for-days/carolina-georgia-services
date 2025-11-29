@@ -466,3 +466,20 @@
 - [ ] Keep card content left-aligned for readability
 - [ ] Test all service+location pages
 - [ ] Push to GitHub and deploy
+
+
+## Fix Google Verification File Deployment - November 28, 2025
+
+- [ ] Check if file is in correct location for Vite/Vercel
+- [ ] Verify file is being copied to dist folder during build
+- [ ] Test file accessibility on live site
+- [ ] Push to GitHub and redeploy
+
+
+## Center Homepage Content - URGENT - November 29, 2025
+
+- [ ] Add text-center to hero section
+- [ ] Center service cards descriptions
+- [ ] Center all section headings and body text
+- [ ] Verify all pages are centered
+- [ ] Push and deploy
