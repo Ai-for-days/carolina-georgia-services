@@ -449,3 +449,11 @@
 - [ ] Add text-center to ALL sections in EmergencyLocationTemplate
 - [ ] Test locally to verify centering
 - [ ] Push to GitHub and deploy
+
+
+## Google Search Console Verification - November 28, 2025
+
+- [ ] Copy Google verification file to public directory
+- [ ] Push to GitHub
+- [ ] Deploy to Vercel
+- [ ] Verify in Google Search Console
