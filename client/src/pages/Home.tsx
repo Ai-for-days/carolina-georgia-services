@@ -76,12 +76,12 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-muted-foreground list-none text-center">
-                  <li>AC Installation and Repair</li>
-                  <li>Heating System Service</li>
-                  <li>Preventive Maintenance</li>
-                  <li>Emergency 24/7 Service</li>
-                </ul>
+                <div className="space-y-2 text-muted-foreground">
+                  <div className="text-center">AC Installation and Repair</div>
+                  <div className="text-center">Heating System Service</div>
+                  <div className="text-center">Preventive Maintenance</div>
+                  <div className="text-center">Emergency 24/7 Service</div>
+                </div>
               </CardContent>
             </Card>
 
@@ -96,12 +96,12 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-muted-foreground list-none text-center">
-                  <li>Leak Detection and Repair</li>
-                  <li>Drain Cleaning</li>
-                  <li>Water Heater Service</li>
-                  <li>Pipe Installation</li>
-                </ul>
+                <div className="space-y-2 text-muted-foreground">
+                  <div className="text-center">Leak Detection and Repair</div>
+                  <div className="text-center">Drain Cleaning</div>
+                  <div className="text-center">Water Heater Service</div>
+                  <div className="text-center">Pipe Installation</div>
+                </div>
               </CardContent>
             </Card>
 
@@ -116,12 +116,12 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-muted-foreground list-none text-center">
-                  <li>Electrical Repairs</li>
-                  <li>Panel Upgrades</li>
-                  <li>Lighting Installation</li>
-                  <li>Generator Installation</li>
-                </ul>
+                <div className="space-y-2 text-muted-foreground">
+                  <div className="text-center">Electrical Repairs</div>
+                  <div className="text-center">Panel Upgrades</div>
+                  <div className="text-center">Lighting Installation</div>
+                  <div className="text-center">Generator Installation</div>
+                </div>
               </CardContent>
             </Card>
           </div>
